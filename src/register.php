@@ -8,14 +8,14 @@
 
 <div class="mx-auto min-h-screen flex items-center justify-center mt-10 mb-32">
     <div class="mx-auto w-full max-w-4xl px-2 sm:px-6 lg:px-8">
-        <div class="block p-6 mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="block p-3 sm:p-8 mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
 
             <h1 class="text-center font-bold text-2xl text-secondary-500 uppercase font-display">Sign Up</h1>
 
             <div class="my-8"></div>
             <form class="" autocomplete="off">
                 <fieldset>
-                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Personal Information</legend>
+                    <legend class="block w-full border-b-2 font-semibold text-md mb-4">Personal Information</legend>
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12">
                             <label for="full_name" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
@@ -63,7 +63,7 @@
                 </fieldset>
                 <div class="my-8"></div>
                 <fieldset>
-                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Address</legend>
+                    <legend class="block w-full border-b-2 font-semibold text-md mb-4">Address</legend>
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12">
                             <label for="address" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
@@ -88,7 +88,7 @@
                 </fieldset>
                 <div class="my-8"></div>
                 <fieldset>
-                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Referrer</legend>
+                    <legend class="block w-full border-b-2 font-semibold text-md mb-4">Referrer</legend>
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 sm:col-span-6">
                             <label for="informant" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Informant</label>
@@ -106,7 +106,7 @@
                 </fieldset>
                 <div class="my-8"></div>
                 <fieldset>
-                    <legend class="block w-full border-b-2 font-semibold text-lg mb-4">Create Password</legend>
+                    <legend class="block w-full border-b-2 font-semibold text-md mb-4">Create Password</legend>
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 sm:col-span-6">
                             <label for="password" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>

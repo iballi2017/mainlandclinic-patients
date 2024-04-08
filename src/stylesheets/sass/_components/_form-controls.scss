@@ -1,0 +1,20 @@
+.input-group {
+    // background-color: red;
+    // padding: 4em;
+    display: flex;
+    align-items: center;
+    input {
+        flex-basis: 80%;
+        border: none;
+        padding: 0;
+        outline: 0;
+        &:focus{
+            border: none;
+            padding: 0;
+            outline: 0;
+        }
+        & + button {
+            flex-basis: 20%;
+        }
+    }
+}
