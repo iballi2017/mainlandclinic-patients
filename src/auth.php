@@ -13,7 +13,7 @@
         <div class="block mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="grid grid-cols-2">
                 <div class="col-span-2 p-3 sm:p-6">
-                    <h1 class="text-center font-bold text-2xl text-secondary-500 uppercase">Sign In</h1>
+                    <h1 class="text-center font-bold text-xl text-secondary-500 uppercase">Sign In</h1>
 
                     <div class="my-8"></div>
                     <form class="max-w-sm mx-auto" autocomplete="off">
