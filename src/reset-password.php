@@ -8,7 +8,7 @@
 
 
 
-<div class="mx-auto min-h-screen my-8 flex items-center justify-center">
+<div class="mx-auto my-8 flex items-center justify-center">
     <div class="mx-auto w-full max-w-lg px-2 sm:px-6 lg:px-8">
         <div class="block mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="grid grid-cols-2">

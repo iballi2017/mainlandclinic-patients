@@ -6,7 +6,7 @@
 <?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 
 
-<div class="mx-auto min-h-screen flex items-center justify-center mt-10 mb-32">
+<div class="mx-auto my-8 flex items-center justify-center mt-10 mb-32">
     <div class="mx-auto w-full max-w-4xl px-2 sm:px-6 lg:px-8">
         <div class="block p-3 sm:p-8 mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
 
