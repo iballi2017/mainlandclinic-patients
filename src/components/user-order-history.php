@@ -62,10 +62,11 @@
                 </div>
                 <div class="basis-4/5">
                     <div class="flex justify-between flex-wrap sm:flex-nowrap text-sm">
-                        <div class="flex flex-col justify-between p-2 sm:p-4 leading-normal">
+                        <!-- <div class="flex flex-col justify-between p-2 sm:p-4 leading-normal"> -->
+                        <div class="p-2 sm:p-4 leading-normal">
                             <h5>Combo 10 urine strip</h5>
                             <h6 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">₦2,400.00</h6>
-                            <span class="inline-block bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Pending</span>
+                            <span class="mb-2 bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Pending</span>
                             <div class="mb-3 font-normal text-gray-700 dark:text-gray-400">15-03-2023</div>
                         </div>
                         <div class="flex flex-col justify-between p-4 leading-normal">
