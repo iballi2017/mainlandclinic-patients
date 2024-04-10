@@ -1,24 +1,3 @@
-<!-- <div class="top-bar fs-50 base-text-color-100 bg-secondary-500 py-3">
-    <div class="container d-flex flex-wrap justify-content-between">
-        <div class="d-flex flex-wrap mb-2 mb-lg-0">
-            <span class="me-5">9, Tinubu Street, off Coker road, illupeju Lagos.</span>
-            <span>clientservices@hacmedical.org</span>
-        </div>
-        <div>
-            <a href="./auth.html" class="base-text-color-100 text-decoration-none">login</a> | <a href="./signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
-            <div class="dropdown">
-                <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</span>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item py-2" href="#">My profile</a>
-                    <a class="dropdown-item py-2" href="#">Appointment history</a>
-                    <a class="dropdown-item py-2" href="#">My Order history</a>
-                    <a class="dropdown-item py-2" href="#">Wishlist</a>
-                    <a class="dropdown-item py-2" href="#">Log out</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="bg-secondary-500 text-accent-650 text-xs sm:text-sm py-4">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="sm:flex items-center justify-between">
