@@ -11,8 +11,8 @@
     <p>A mail was sent to your email for verification </p>
     <div class="my-4"></div>
     <a href="./" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm block w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Go home</a>
+</div>
 
 
-
-    <!-- footer -->
-    <?php include_once(__DIR__ . "./components/footer.php"); ?>
+<!-- footer -->
+<?php include_once(__DIR__ . "./components/footer.php"); ?>
