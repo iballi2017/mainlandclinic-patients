@@ -37,8 +37,10 @@
         </div>
 
         <div class="col-span-12">
-            <fieldset>
-                <legend class="sr-only block w-full border-b-2 font-semibold text-md mb-4">Past Surgical History: (Please fill out if available, and if its not available type NA)</legend>
+            <fieldset class="relative">
+                <legend class="sr-only block w-full border-b-2 font-semibold text-md mb-4">
+                    Past Surgical History: (Please fill out if available, and if its not available type NA)
+                </legend>
                 <label for="past-surgical-history" class="cursor-pointer block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Past Surgical History: (Please fill out if available, and if its not available type NA)</label>
                 <input type="text" id="past-surgical-history" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
             </fieldset>
