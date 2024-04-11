@@ -15,6 +15,7 @@ html,
 body {
   font-size: 16px;
   width: 100%;
+  color: var(--clr-secondary-500);
   margin: 0;
   padding: 0;
   font-family: var(--ff-body);
@@ -101,6 +102,11 @@ html {
   cursor: default;
 }
 
+.remove-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .bg-dark-room-surgeon {
   background-image: url(../assets/images/dark-room-hospital.png);
   background-repeat: no-repeat;
@@ -140,10 +146,10 @@ button[aria-expanded=true] .hide {
   display: block;
 }
 
-button:hover {
+button[role=tab]:hover {
   color: var(--clr-primary-500) !important;
 }
-button[aria-selected=true] {
+button[role=tab][aria-selected=true] {
   color: var(--clr-primary-500);
   border-bottom: 2px solid var(--clr-primary-500);
 }

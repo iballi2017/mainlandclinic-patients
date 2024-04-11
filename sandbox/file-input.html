@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Input</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <div class="file-input-wrapper">
+      <input type="file" name="file-upload" />
+      <button class="btn-upload">Upload File</button>
+    </div>
+
+
+    <script>
+      const file_input = document.querySelector("input");
+      console.log("file_input: ", file_input)
+      file_input.addEventListener("change", (e)=>{
+      console.log("e.target.value: ", e.target.value)
+      console.log("e.target.value: ", e.target.files[0])
+      })
+    </script>
+  </body>
+</html>

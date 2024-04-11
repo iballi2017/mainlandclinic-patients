@@ -110,7 +110,13 @@
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 sm:col-span-6">
                             <label for="password" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                            <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                            <div class="relative">
+                                <input type="password" id="password" class="password bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                <button type="button" aria-expanded="false" aria-controls="fas" class="password-type-toggler | absolute right-0 top-0 h-full px-2 text-gray-400">
+                                    <i class="fas fa-eye display"></i>
+                                    <i class="fas fa-eye-slash hide"></i>
+                                </button>
+                            </div>
                         </div>
                         <div class="col-span-12 sm:col-span-6">
                             <label for="confirm_password" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
