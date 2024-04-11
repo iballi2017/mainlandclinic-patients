@@ -69,7 +69,7 @@
                 <section>
                     <h6 class="font-semibold mb-2">Payment Details</h6>
                     <p>
-                    <ul>
+                    <ul class="leading-7">
                         <li>
                             Items total:&nbsp;₦2,400.00
                         </li>
@@ -94,7 +94,7 @@
                 <section>
                     <h6 class="font-semibold mb-2">Shipping Address</h6>
                     <p>
-                    <ul>
+                    <ul class="leading-7">
                         <li>
                             <i class="fas fa-user"></i>&nbsp;Akinolu Mogaji
                         </li>
