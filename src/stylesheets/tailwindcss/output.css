@@ -1948,6 +1948,16 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2704,22 +2714,6 @@ input:checked + .toggle-bg {
     grid-column: span 6 / span 6;
   }
 
-  .sm\:col-span-9 {
-    grid-column: span 9 / span 9;
-  }
-
-  .sm\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-
-  .sm\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
-  .sm\:col-span-5 {
-    grid-column: span 5 / span 5;
-  }
-
   .sm\:col-span-7 {
     grid-column: span 7 / span 7;
   }
@@ -2805,6 +2799,11 @@ input:checked + .toggle-bg {
     padding-right: 1rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2813,6 +2812,11 @@ input:checked + .toggle-bg {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .sm\:py-44 {
@@ -2872,6 +2876,10 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
   }
