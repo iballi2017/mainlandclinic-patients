@@ -158,6 +158,11 @@ button[role=tab][aria-selected=true] {
   position: relative;
   display: block;
 }
+@media (min-width: 50em) {
+  .main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child) .nav-item {
+    margin-right: var(--size-600);
+  }
+}
 .main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child):after {
   content: "";
   display: block;
@@ -207,6 +212,14 @@ button[role=tab][aria-selected=true] {
   margin-top: var(--size-600);
 }
 
+.hero-owl-slider {
+  /* Feel free to change duration  */
+  /* .owl-animated-out - only for current item */
+  /* This is very important class. Use z-index if you want move Out item above In item */
+  /* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */
+  /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+}
 .hero-owl-slider .owl-dots {
   position: absolute;
   bottom: 2em;
@@ -247,6 +260,38 @@ button[role=tab][aria-selected=true] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+.hero-owl-slider .animated {
+  -webkit-animation-duration: 1000 ms;
+  animation-duration: 1000 ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.hero-owl-slider .owl-animated-out {
+  z-index: 1;
+}
+.hero-owl-slider .owl-animated-in {
+  z-index: 0;
+}
+.hero-owl-slider .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
