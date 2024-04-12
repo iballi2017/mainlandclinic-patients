@@ -1,9 +1,15 @@
+@use "../_partials/mixins";
 .main-toolbar {
   .navlist {
     > a {
       position: relative;
       display: block;
       &:not(&:last-child) {
+        @include mixins.minmq(50em) {
+          .nav-item {
+            margin-right: var(--size-600);
+          }
+        }
         &:after {
           content: "";
           display: block;

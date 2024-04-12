@@ -43,11 +43,11 @@
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex items-center space-x-4 navlist">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="#" class="block py-4 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About</a>
-                        <a href="#" class="block py-4 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Services</a>
-                        <a href="#" class="block py-4 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Contact Us</a>
-                        <a href="#" class="block py-4 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a>
-                        <a href="#" class="block py-4 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
+                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About</a>
+                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Services</a>
+                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Contact Us</a>
+                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a>
+                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
                         <a href="#" class="text-white bg-primary-500 rounded-r-full rounded-l-full hover:bg-primary-600 hover:text-white px-6 py-2 text-sm font-medium">Book an appointment</a>
                     </div>
                 </div>

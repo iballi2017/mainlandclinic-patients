@@ -2,13 +2,13 @@ $(document).ready(function () {
     // alert("hello world!");
     $(".hero-owl-slider").owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1500,
         animateOut: "fadeOut",
         animateOut: "slideOutDown",
         animateIn: "flipInX",
+        animateOut: 'fadeOut',
         items: 1,
-        // navText: ['<i data-feather="menu"></i>', ' <i data-feather="menu"></i>'],
     });
 
 })
