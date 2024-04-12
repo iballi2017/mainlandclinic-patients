@@ -41,13 +41,72 @@
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex items-center space-x-4 navlist">
+                    <div class="flex items-center space-x-8 navlist">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About</a>
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Services</a>
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Contact Us</a>
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a>
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
+                        <a href="#" class="block py-6 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About us</a>
+
+                        <!-- Services -->
+                        <button id="dropdownServicesButton" data-dropdown-toggle="dropdownServices" data-dropdown-delay="500" data-dropdown-trigger="hover" class="font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">
+                            Services
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="dropdownServices" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 -left-8 -right-8 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownServicesButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Clinical services</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Fitness/Wellness test</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Telemedicine</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Pre-employment test</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Food Handlers test</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Others -->
+                        <button id="dropdownOthersButton" data-dropdown-toggle="dropdownOthers" data-dropdown-delay="500" data-dropdown-trigger="hover" class="font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">
+                            Others
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="dropdownOthers" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 -left-8 -right-8 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownOthersButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Manage clinics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Support & giving
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Partnership
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Career
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="block py-6 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Health news & updates</a>
+                        <!-- <a href="#" class="block py-6 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Contact Us</a> -->
+                        <!-- <a href="#" class="block py-6 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a> -->
+                        <a href="#" class="block py-6 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
                         <a href="#" class="text-white bg-primary-500 rounded-r-full rounded-l-full hover:bg-primary-600 hover:text-white px-6 py-2 text-sm font-medium">Book an appointment</a>
                     </div>
                 </div>

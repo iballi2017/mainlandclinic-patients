@@ -158,11 +158,6 @@ button[role=tab][aria-selected=true] {
   position: relative;
   display: block;
 }
-@media (min-width: 50em) {
-  .main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child) .nav-item {
-    margin-right: var(--size-600);
-  }
-}
 .main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child):after {
   content: "";
   display: block;
@@ -297,6 +292,7 @@ button[role=tab][aria-selected=true] {
 
 :root {
   /* COLORS */
+  --clr-primary-50: hsla(86, 81%, 75%, 1);
   --clr-primary-500: hsl(108, 93%, 29%);
   --clr-primary-600: hsl(97, 58%, 24%);
   --clr-primary-700: hsl(0, 0%, 36%);
