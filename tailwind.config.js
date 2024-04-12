@@ -6,9 +6,11 @@ module.exports = {
     extend: {
       fontFamily: {
         display: '"Poppins", sans-serif', // Adds a new `font-display` class
-      }},
+      }
+    },
     colors: {
       'primary': {
+        '50': '#c6f38c',
         '200': 'hsl(109, 37%, 86%)',
         '500': 'hsl(108, 93%, 29%)',
         '600': 'hsl(97, 58%, 24%)',

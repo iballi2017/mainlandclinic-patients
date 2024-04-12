@@ -1,8 +1,8 @@
 <!-- appointment-history-app works! -->
-<!-- top-bar -->
-<?php include_once(__DIR__ . "./components/top-bar.php"); ?>
 <!-- header -->
 <?php include_once(__DIR__ . "./components/header.php"); ?>
+<!-- top-bar -->
+<?php include_once(__DIR__ . "./components/top-bar.php"); ?>
 <!-- main-toolbar -->
 <?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 <!-- user-account-user-info -->
