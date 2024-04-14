@@ -1188,7 +1188,6 @@ input:checked + .toggle-bg {
   grid-column: span 6 / span 6;
 }
 
-<<<<<<< HEAD
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -1197,8 +1196,6 @@ input:checked + .toggle-bg {
   grid-column: span 8 / span 8;
 }
 
-=======
->>>>>>> 336ca8df152001faf8e295d848e0fcdca5f86dcd
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1348,6 +1345,10 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .min-h-64 {
   min-height: 16rem;
 }
@@ -1462,7 +1463,6 @@ input:checked + .toggle-bg {
 
 .basis-\[90\%\] {
   flex-basis: 90%;
-<<<<<<< HEAD
 }
 
 .basis-full {
@@ -1471,12 +1471,14 @@ input:checked + .toggle-bg {
 
 .basis-1\/5 {
   flex-basis: 20%;
-=======
->>>>>>> 336ca8df152001faf8e295d848e0fcdca5f86dcd
 }
 
-.basis-full {
-  flex-basis: 100%;
+.basis-2\/5 {
+  flex-basis: 40%;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
 }
 
 .basis-4\/5 {
@@ -1856,7 +1858,6 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-<<<<<<< HEAD
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(164 202 254 / var(--tw-bg-opacity));
@@ -1867,8 +1868,6 @@ input:checked + .toggle-bg {
   background-color: rgb(227 160 8 / var(--tw-bg-opacity));
 }
 
-=======
->>>>>>> 336ca8df152001faf8e295d848e0fcdca5f86dcd
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2851,8 +2850,17 @@ input:checked + .toggle-bg {
     width: 12rem;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:rounded-none {
     border-radius: 0px;
+  }
+
+  .md\:rounded-s-lg {
+    border-start-start-radius: 0.5rem;
+    border-end-start-radius: 0.5rem;
   }
 
   .md\:p-8 {
