@@ -1,8 +1,8 @@
 <!-- user-orders-app works! -->
-<!-- top-bar -->
-<?php include_once(__DIR__ . "./components/top-bar.php"); ?>
 <!-- header -->
 <?php include_once(__DIR__ . "./components/header.php"); ?>
+<!-- top-bar -->
+<?php include_once(__DIR__ . "./components/top-bar.php"); ?>
 <!-- main-toolbar -->
 <?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 <!-- user-account-user-info -->
@@ -30,10 +30,10 @@
 
                     <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <ul class="remove-scrollbar flex overflow-auto text-sm font-bold text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-                            <li class="me-2 basis-1/2">
+                            <li>
                                 <button id="order-history-tab" data-tabs-target="#order-history" type="button" role="tab" aria-controls="order-history" aria-selected="true" class="w-full inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Other History</button>
                             </li>
-                            <li class="me-2 basis-1/2">
+                            <li>
                                 <button id="wishlist-tab" data-tabs-target="#wishlist" type="button" role="tab" aria-controls="wishlist" aria-selected="false" class="w-full inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Wishlist</button>
                             </li>
                         </ul>
