@@ -154,8 +154,145 @@ button[role=tab][aria-selected=true] {
   border-bottom: 2px solid var(--clr-primary-500);
 }
 
+.main-toolbar .navlist > a {
+  position: relative;
+  display: block;
+}
+.main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child):after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--clr-primary-500);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-out;
+}
+.main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child)[aria-current=page] {
+  color: var(--clr-primary-500);
+  font-weight: 600;
+}
+.main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child):hover:after, .main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child)[aria-current=page]:after {
+  width: 100%;
+  transform: scaleX(1);
+  transition: transform 300ms ease-in;
+}
+
+.reviews-owl-slider.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--clr-primary-500);
+}
+.reviews-owl-slider.owl-theme .owl-dots .owl-dot:hover span {
+  background: #208d0580;
+}
+.reviews-owl-slider.owl-theme .owl-dots .owl-dot span {
+  transition: all 300ms ease-in-out;
+  height: 7px;
+  width: 30px;
+  margin: 0;
+  margin-right: -5%;
+  border-radius: 0;
+  background: #d6d6d6;
+  background: white;
+}
+.reviews-owl-slider.owl-theme .owl-dots .owl-dot:first-child span {
+  border-radius: 3px 0 0 3px;
+}
+.reviews-owl-slider.owl-theme .owl-dots .owl-dot:last-child span {
+  border-radius: 0 3px 3px 0;
+}
+.reviews-owl-slider .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: var(--size-600);
+}
+
+.hero-owl-slider {
+  /* Feel free to change duration  */
+  /* .owl-animated-out - only for current item */
+  /* This is very important class. Use z-index if you want move Out item above In item */
+  /* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */
+  /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+}
+.hero-owl-slider .owl-dots {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+}
+.hero-owl-slider .owl-dots .owl-dot span {
+  width: 20px;
+  height: 20px;
+  background-color: var(--clr-accent-600);
+  border: 5px solid var(--clr-accent-600);
+  outline: 3px solid var(--clr-accent-600);
+}
+.hero-owl-slider .owl-dots .owl-dot.active span {
+  background-color: white;
+  border: 5px solid black;
+  outline: 3px solid white;
+}
+@media (max-width: 768px) {
+  .hero-owl-slider .owl-dots {
+    bottom: 1em;
+  }
+  .hero-owl-slider .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+    border: 3px solid var(--clr-accent-600);
+    outline: 1px solid var(--clr-accent-600);
+  }
+  .hero-owl-slider .owl-dots .owl-dot.active span {
+    border: 3px solid black;
+    outline: 1px solid white;
+  }
+  .hero-owl-slider .hero-item {
+    position: relative;
+    min-height: 496px;
+  }
+  .hero-owl-slider .hero-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hero-owl-slider .animated {
+  -webkit-animation-duration: 1000 ms;
+  animation-duration: 1000 ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.hero-owl-slider .owl-animated-out {
+  z-index: 1;
+}
+.hero-owl-slider .owl-animated-in {
+  z-index: 0;
+}
+.hero-owl-slider .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 :root {
   /* COLORS */
+  --clr-primary-50: hsla(86, 81%, 75%, 1);
   --clr-primary-500: hsl(108, 93%, 29%);
   --clr-primary-600: hsl(97, 58%, 24%);
   --clr-primary-700: hsl(0, 0%, 36%);
@@ -246,6 +383,15 @@ button[role=tab][aria-selected=true] {
     --fs-button: var(--fs-100);
   }
 }
+.fs-hero-title {
+  font-size: var(--fs-hero-title);
+  line-height: 1;
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
 .hero {
   background-image: url("../images/bg-hero-2.png");
   background-size: cover;
