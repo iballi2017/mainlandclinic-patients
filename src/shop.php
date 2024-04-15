@@ -47,7 +47,7 @@
             do {
 
                 echo <<<_END
-            <div class="col-span-6 sm:col-span-4 md:col-span-3">
+            <div class="col-span-6 sm:col-span-4 md:col-span-3 out-of-stock">
                 <div class="product-listing-card flex flex-col justify-between"  x-data="{ isOpen: false }"
         x-on:mouseenter="isOpen = true" 
         x-on:mouseleave="isOpen = false">         
@@ -82,5 +82,9 @@ _END;
     </section>
 </div>
 
+
+<div class="my-16"></div>
+<!-- foot -->
+<?php include_once(__DIR__ . "./components/foot.php"); ?>
 <!-- footer -->
 <?php include_once(__DIR__ . "./components/footer.php"); ?>

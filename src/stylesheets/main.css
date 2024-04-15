@@ -107,6 +107,11 @@ html {
   scrollbar-width: none;
 }
 
+.main-toolbar.sticky-top {
+  top: -100px;
+  transition: 0.5s;
+}
+
 .bg-dark-room-surgeon {
   background-image: url(../assets/images/dark-room-hospital.png);
   background-repeat: no-repeat;
@@ -305,6 +310,45 @@ button[role=tab][aria-selected=true] {
   margin-right: 2px;
 }
 
+.out-of-stock {
+  --textWidth: 100px;
+  position: relative;
+}
+.out-of-stock::after {
+  content: "Out of stock";
+  font-weight: 400;
+  font-size: 15px;
+  color: #1b2c19;
+  background: #f2cb56;
+  border: 1px solid #818181;
+  border-radius: 5px;
+  padding: 0.1em 0.3em;
+  position: absolute;
+  top: 46%;
+  left: calc(50% - var(--textWidth) / 2);
+  display: block;
+  margin: 0 auto;
+  width: var(--textWidth);
+  z-index: 3;
+}
+.out-of-stock::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5568627451);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+.out-of-stock:hover img {
+  transform: scale(1);
+  transition: unset;
+}
+.out-of-stock:hover .card-footer {
+  display: none;
+}
+
 .product-action-details table th,
 .product-action-details table td {
   padding-top: 0.8em;
@@ -363,6 +407,39 @@ button[role=tab][aria-selected=true] {
 }
 .qty-ctrl div button:hover {
   background-color: var(--clr-accent-500);
+}
+
+.product-image-canvas {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.product-image-canvas .preview {
+  max-width: 250px;
+  margin: 0 auto;
+  flex-basis: 80%;
+}
+.product-image-canvas .preview .inner {
+  height: 270px;
+}
+.product-image-canvas .product-images {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-basis: 20%;
+}
+.product-image-canvas .product-images li {
+  max-width: 50px;
+  cursor: pointer;
+}
+
+footer .navbar-brand {
+  display: block;
+  max-width: 124px;
 }
 
 :root {

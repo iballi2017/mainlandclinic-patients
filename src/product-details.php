@@ -14,8 +14,27 @@
 
     <div class="p-6 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-12 sm:col-span-5 bg-red-400">
-                <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/761281/1.jpg?0471" alt="">
+            <div class="col-span-12 sm:col-span-5 bg-gray-50">
+                <!-- <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/761281/1.jpg?0471" alt=""> -->
+                <div class="product-image-canvas" id="product-image-canvas">
+                    <div class="preview" id="preview">
+                        <div class="inner">
+                            <img src="" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <ul class="product-images image-items" id="product-images">
+                        <li aria-label="first image">
+                            <div class="img">
+                                <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/761281/1.jpg?0471" alt="" class="img-fluid">
+                            </div>
+                        </li>
+                        <li aria-label="second image">
+                            <div class="img">
+                                <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/28/1308372/1.jpg?1527" alt="" class="img-fluid">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="product-action-details | col-span-12 sm:col-span-7">
 
@@ -29,21 +48,21 @@
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600">
                             <th scope="col" colspan="2">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex align-items-center me-4">
+                                    <div class="flex items-center me-4">
                                         <div class="star-wrap">
-                                            <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            <i class="fas fa-star text-yellow-300"></i>
                                         </div>
                                         <div class="star-wrap">
-                                            <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            <i class="fas fa-star text-yellow-300"></i>
                                         </div>
                                         <div class="star-wrap">
-                                            <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            <i class="fas fa-star text-yellow-300"></i>
                                         </div>
                                         <div class="star-wrap">
-                                            <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            <i class="fas fa-star text-yellow-300"></i>
                                         </div>
                                         <div class="star-wrap">
-                                            <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            <i class="fas fa-star text-yellow-300"></i>
                                         </div>
                                     </div>
                                     <p class="mb-0 fs-50">(No reviews yet)</p>
@@ -142,7 +161,7 @@
     <div class="my-8"></div>
     <section>
         <h4 class="text-2xl font-bold mb-4">Related products</h4>
-       
+
         <div class="grid grid-cols-12 gap-4">
 
             <?php
@@ -187,5 +206,7 @@ _END;
 
 
 <div class="my-16"></div>
+<!-- foot -->
+<?php include_once(__DIR__ . "./components/foot.php"); ?>
 <!-- footer -->
 <?php include_once(__DIR__ . "./components/footer.php"); ?>
