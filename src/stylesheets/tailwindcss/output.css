@@ -1800,6 +1800,11 @@ input:checked + .toggle-bg {
   border-color: hsl(0 0% 36% / var(--tw-border-opacity)) !important;
 }
 
+.border-\[\#c3c3c3\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(195 195 195 / var(--tw-border-opacity));
+}
+
 .border-blue-600 {
   --tw-border-opacity: 1;
   border-color: rgb(28 100 242 / var(--tw-border-opacity));
@@ -1842,21 +1847,6 @@ input:checked + .toggle-bg {
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-gray-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 250 251 / var(--tw-border-opacity));
-}
-
-.border-accent-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(195 195 195 / var(--tw-border-opacity));
-}
-
-.border-\[\#c3c3c3\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(195 195 195 / var(--tw-border-opacity));
 }
 
 .border-b-accent-650 {
@@ -1955,11 +1945,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 128 128 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -2073,11 +2058,6 @@ input:checked + .toggle-bg {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-8 {
@@ -2232,6 +2212,11 @@ input:checked + .toggle-bg {
   color: rgb(195 195 195 / var(--tw-text-opacity));
 }
 
+.text-accent-700 {
+  --tw-text-opacity: 1;
+  color: rgb(196 196 196 / var(--tw-text-opacity));
+}
+
 .text-accent-750 {
   --tw-text-opacity: 1;
   color: rgb(130 130 130 / var(--tw-text-opacity));
@@ -2350,11 +2335,6 @@ input:checked + .toggle-bg {
 .text-yellow-300 {
   --tw-text-opacity: 1;
   color: rgb(250 202 21 / var(--tw-text-opacity));
-}
-
-.text-accent-700 {
-  --tw-text-opacity: 1;
-  color: rgb(196 196 196 / var(--tw-text-opacity));
 }
 
 .underline {
