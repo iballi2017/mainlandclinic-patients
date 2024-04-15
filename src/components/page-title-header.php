@@ -4,8 +4,8 @@
             <li>
                 <a href="#">Home</a>
             </li>
-            <li>Shop</li>
+            <li><?php echo  $pageTitle; ?></li>
         </ul>
-        <h1 class="text-3xl font-bold">Shop</h1>
+        <h1 class="text-3xl font-bold"><?php echo  $pageTitle; ?></h1>
     </div>
 </section>

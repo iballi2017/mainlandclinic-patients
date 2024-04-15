@@ -6,7 +6,8 @@
 <?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 
 <!-- page title header -->
-<?php include_once(__DIR__ . "./components/page-title-header.php"); ?>
+<?php $pageTitle = "Cart"; include_once(__DIR__ . "./components/page-title-header.php"); ?>
+
 <div class="my-4"></div>
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
