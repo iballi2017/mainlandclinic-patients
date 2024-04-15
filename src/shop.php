@@ -70,10 +70,7 @@
                         Lorem, ipsum dolor.
                         </div>
 
-
-                        <div class="bg-blue-300">
-                            <!-- <h1 class="p-4">My name</h1> -->
-
+                        <div x-show="isOpen">
                             <div class="bg-red-200 relative">
                                 <div class="bg-white absolute left-0 right-0 top-0 p-4 rounded-b-lg shadow">
                                     <div class="flex flex-col gap-2">
@@ -83,19 +80,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-                        <!-- <div class="footer relative bg-red-300" x-show="isOpen"> -->
-                        <!-- <div class="footer relative bg-red-300 py-8">
-                            <h1>Hiiii</h1>
-                            <div class="px-2 pb-2 pt-4 absolute left-0 right-0 -bottom-full z-10 shadow rounded-b-lg bg-white">
-                                <div class="flex flex-col gap-2">
-                                    <button type="button" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add to cart</button>
-                                    <button type="button" class="text-red-500 border border-red-500  bg-white hover:bg-gray-300 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add to wishlist</button>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
