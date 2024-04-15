@@ -114,6 +114,13 @@ html {
   background-position: center;
 }
 
+.bg-title-1 {
+  background-image: url(../assets/images/title-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .input-group {
   display: flex;
   align-items: center;
@@ -288,6 +295,14 @@ button[role=tab][aria-selected=true] {
   100% {
     opacity: 0;
   }
+}
+
+.breadcrumb li:not(:last-child) {
+  font-weight: 600;
+}
+.breadcrumb li:not(:last-child):after {
+  content: "/";
+  margin-right: 2px;
 }
 
 :root {

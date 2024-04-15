@@ -14,16 +14,17 @@
 
         </div>
     </div>
-    <div class="my-8"></div>
+    <div class="my-4"></div>
     <button type="submit" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Save</button>
 
 </form>
 
+<div class="my-8"></div>
 
 <ul>
     <li class="flex flex-wrap items-center justify-between">
         <p class="text-alt-200">Lorem, ipsum dolor.</p>
-        <button class="text-sm bg-red-500 text-white hover:text-blue-500 px-2.5 py-1 rounded">Delete</button>
+        <button class="text-sm text-red-500 px-2.5 py-1 rounded">Delete</button>
     </li>
 </ul>
 
