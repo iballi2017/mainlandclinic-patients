@@ -7,19 +7,7 @@
 
 <!-- page title header -->
 <?php include_once(__DIR__ . "./components/page-title-header.php"); ?>
-<div class="my-2"></div>
-
-
-<!-- <div x-data="{ isOpen: false }">
-    <div 
-        x-on:mouseenter="isOpen = true" 
-        x-on:mouseleave="isOpen = false"
-    >
-        <button @click="isOpen = !isOpen">Toggle</button>
-        <div x-show="isOpen">Content to show on hover</div>
-    </div>
-</div> -->
-
+<div class="my-4"></div>
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <!-- filter and search section -->
@@ -35,12 +23,13 @@
                 </div>
             </div>
             <div>
-                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500">
+                <select id="countries" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500">
                     <option selected>Sort by</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="latest">Latest</option>
+                    <option value="average-rating">Average rating</option>
+                    <option value="low-to-high">Low to high</option>
+                    <option value="high-to-low">High to low</option>
                 </select>
             </div>
         </div>
@@ -65,17 +54,18 @@
                     <div class="overflow-hidden border-t border-x rounded-t-lg">
                         <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/761281/1.jpg?0471" alt="">
                     </div>
-                    <div class="border-b border-x">
-                        <div class="body p-4 b-4">
-                        Lorem, ipsum dolor.
+                    <div class="border-b border-x rounded-b-lg hover:rounded-none hover:border-b-0">
+                        <div class="body p-6 b-4">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>N35,00</p>
                         </div>
 
                         <div x-show="isOpen">
                             <div class="bg-red-200 relative">
-                                <div class="bg-white absolute left-0 right-0 top-0 p-4 rounded-b-lg shadow">
+                                <div class="bg-white absolute left-0 right-0 -top-4 p-4 rounded-b-lg shadow-md">
                                     <div class="flex flex-col gap-2">
                                         <button type="button" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add to cart</button>
-                                        <button type="button" class="text-red-500 border border-red-500  bg-white hover:bg-gray-300 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add to wishlist</button>
+                                        <button type="button" class="text-red-500 border border-red-500  bg-white hover:bg-red-500 hover:text-white focus:ring-1 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add to wishlist</button>
                                     </div>
                                 </div>
                             </div>

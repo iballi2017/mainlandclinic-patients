@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./libs/owlcarousel/css/owl.theme.default.min.css">
     <!-- tailwindcss -->
     <link rel="stylesheet" href="./stylesheets/tailwindcss/output.css" />
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 
     <!-- custom styles -->
     <link rel="stylesheet" href="./stylesheets/main.css" />
