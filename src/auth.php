@@ -15,6 +15,9 @@
                     <h1 class="text-center font-bold text-xl text-secondary-500 uppercase">Sign In</h1>
 
                     <div class="my-8"></div>
+                    <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                        <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+                    </div>
                     <form class="max-w-sm mx-auto" autocomplete="off">
                         <div class="mb-5">
                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
