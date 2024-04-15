@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./libs/owlcarousel/css/owl.theme.default.min.css">
     <!-- tailwindcss -->
     <link rel="stylesheet" href="./stylesheets/tailwindcss/output.css" />
+
     <!-- custom styles -->
     <link rel="stylesheet" href="./stylesheets/main.css" />
 </head>

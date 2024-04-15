@@ -2,6 +2,7 @@
 
 import FormControls from "./form-controls.js";
 import MiscellaneousEvents from "./miscellaneous-events.js";
+import Product from "./product.js";
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    
+
     // /**Go back with button clicked */
     const triggers = document.querySelectorAll(".back-history-btn");
     for (let i = 0; i < triggers.length; i++) {
@@ -25,5 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+
+    const product_image_canvas = document.querySelector("#product-image-canvas");
+    // console.log("product_image_canvas: ", product_image_canvas)
+
+    const priview_screen = product_image_canvas ? product_image_canvas.querySelector("#preview") : null
+    // console.log("priview_screen: ", priview_screen)
+
+    const image_items = document.querySelector(".image-items")
+    // console.log("image_items: ", image_items.children)
+
+    const toggleImages = new Product();
+    toggleImages.toggleImagesOnDetailsPage(priview_screen, image_items)
 
 })

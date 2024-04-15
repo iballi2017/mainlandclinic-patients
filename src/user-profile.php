@@ -15,7 +15,7 @@
     <div class="p-2 sm:p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
         <div class="grid grid-cols-12 gap-2">
-            <div class="col-span-12 md:col-span-3">
+            <div class="col-span-12 md:col-span-3 hidden sm:block">
                 <div class="p-1 sm:p-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                     <?php include_once(__DIR__ . "./components/user-account-sidebar.php"); ?>
                 </div>
