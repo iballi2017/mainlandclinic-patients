@@ -1,6 +1,6 @@
 .main-toolbar {
   .navlist {
-    > a {
+    > a:not([aria-label="shopping cart"]) {
       position: relative;
       display: block;
       &:not(&:last-child) {

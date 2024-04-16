@@ -166,11 +166,11 @@ button[role=tab][aria-selected=true] {
   border-bottom: 2px solid var(--clr-primary-500);
 }
 
-.main-toolbar .navlist > a {
+.main-toolbar .navlist > a:not([aria-label="shopping cart"]) {
   position: relative;
   display: block;
 }
-.main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child):after {
+.main-toolbar .navlist > a:not([aria-label="shopping cart"]):not(.main-toolbar .navlist > a:not([aria-label="shopping cart"]):last-child):after {
   content: "";
   display: block;
   height: 2px;
@@ -183,11 +183,11 @@ button[role=tab][aria-selected=true] {
   transform-origin: left;
   transition: transform 300ms ease-out;
 }
-.main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child)[aria-current=page] {
+.main-toolbar .navlist > a:not([aria-label="shopping cart"]):not(.main-toolbar .navlist > a:not([aria-label="shopping cart"]):last-child)[aria-current=page] {
   color: var(--clr-primary-500);
   font-weight: 600;
 }
-.main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child):hover:after, .main-toolbar .navlist > a:not(.main-toolbar .navlist > a:last-child)[aria-current=page]:after {
+.main-toolbar .navlist > a:not([aria-label="shopping cart"]):not(.main-toolbar .navlist > a:not([aria-label="shopping cart"]):last-child):hover:after, .main-toolbar .navlist > a:not([aria-label="shopping cart"]):not(.main-toolbar .navlist > a:not([aria-label="shopping cart"]):last-child)[aria-current=page]:after {
   width: 100%;
   transform: scaleX(1);
   transition: transform 300ms ease-in;
@@ -308,6 +308,14 @@ button[role=tab][aria-selected=true] {
 .breadcrumb li:not(:last-child):after {
   content: "/";
   margin-right: 2px;
+}
+
+.product-listing-card .title {
+  height: 40px;
+  font-size: 0.9rem;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .out-of-stock {

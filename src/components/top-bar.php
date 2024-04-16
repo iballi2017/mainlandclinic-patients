@@ -13,11 +13,15 @@
             </div>
             <div class="flex items-center justify-between gap-8">
                 <div class="flex items-center gap-4">
-                    <a href="" aria-label="facebook connect">
-                        <i class="fab fa-facebook text-lg"></i>
+                    <a href="" aria-label="shopping cart">
+                        <i class="fas fa-shopping-cart text-lg">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
+                        </i>
                     </a>
-                    <a href="" aria-label="twitter connect">
-                        <i class="fab fa-twitter text-lg"></i>
+                    <a href="" aria-label="notification">
+                        <i class="fas fa-bell text-lg">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
+                        </i>
                     </a>
                 </div>
                 <div class="font-semibold flex items-center">
