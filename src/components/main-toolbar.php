@@ -109,7 +109,7 @@
                         <!-- <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a> -->
                         <a href="shop.php" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
 
-                        <a href="" aria-label="shopping cart">
+                        <a href="shopping-cart.php" aria-label="shopping cart">
                             <i class="fas fa-shopping-cart text-lg">
                                 <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
                             </i>

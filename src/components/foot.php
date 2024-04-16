@@ -5,7 +5,7 @@
 <footer class="bg-secondary-500 text-accent-600">
     <!-- <div class="container padding-block-600 text-white fs-50 line-height-300"> -->
 
-    <div class="mx-auto max-w-7xl px-2 text-sm sm:px-6 lg:px-8 py-16 leading-7">
+    <div class="mx-auto max-w-7xl px-2 text-sm sm:px-6 lg:px-8 py-16 sm:leading-7">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-6 sm:col-span-3">
                 <section class="foot-section">
@@ -20,7 +20,7 @@
             <div class="col-span-6 sm:col-span-3">
                 <h6 class="text-lg font-semibold sm:mb-4">Quicklinks</h6>
                 <nav>
-                    <ul role="list" class="list-style-none ps-0" aria-label="secondary">
+                    <ul role="list" class="list-style-none ps-0 leading-8" aria-label="secondary">
                         <li><a href="#" class="text-decoration-none line-height-400">About
                                 us</a></li>
                         <li><a href="#" class="text-decoration-none line-height-400">Careers</a>

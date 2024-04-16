@@ -13,7 +13,7 @@
             </div>
             <div class="flex items-center justify-between gap-8">
                 <div class="flex items-center gap-4">
-                    <a href="" aria-label="shopping cart">
+                    <a href="shopping-cart.php" aria-label="shopping cart">
                         <i class="fas fa-shopping-cart text-lg">
                             <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
                         </i>
