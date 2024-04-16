@@ -1,6 +1,6 @@
 <div class="bg-secondary-500 text-accent-650 text-xs sm:text-sm py-4">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="sm:flex items-center justify-between">
+        <div class="sm:flex items-center justify-between gap-8">
             <div class="flex items-center justify-between gap-8">
                 <div class="flex items-center gap-2">
                     <i class="fas fa-phone-alt"></i>
@@ -11,17 +11,17 @@
                     <span>info@mainlandclinics.com</span>
                 </div>
             </div>
-            <div class="flex items-center justify-between gap-8">
+            <div class="flex items-center justify-between gap-4 mt-2 sm:mt-0">
                 <div class="flex items-center gap-4">
-                    <a href="shopping-cart.php" aria-label="shopping cart">
-                        <i class="fas fa-shopping-cart text-lg">
-                            <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
-                        </i>
+                    <a href="shopping-cart.php" aria-label="shopping cart" class="p-2 md:p-1.5 rounded-full bg-white">
+                        <span class="block max-w-4">
+                            <img src="./assets/icons/icon-shopping-cart-outline-rounded.svg" alt="">
+                        </span>
                     </a>
-                    <a href="" aria-label="notification">
-                        <i class="fas fa-bell text-lg">
-                            <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
-                        </i>
+                    <a href="notification.php" aria-label="notification" class="p-2 md:p-1.5 rounded-full bg-white">
+                        <span class="block max-w-4">
+                            <img src="./assets/icons/icon-notifications_none_black.svg" alt="">
+                        </span>
                     </a>
                 </div>
                 <div class="font-semibold flex items-center">
