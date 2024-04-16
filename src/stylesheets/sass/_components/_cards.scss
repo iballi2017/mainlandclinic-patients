@@ -1,3 +1,14 @@
+.product-listing-card{
+  .title{
+    height: 40px;
+    font-size: .9rem;
+    line-height: 20px;
+    overflow: hidden;
+    // background-color: red;
+    text-overflow: ellipsis;
+  }
+}
+
 .out-of-stock {
   --textWidth: 100px;
   position: relative;

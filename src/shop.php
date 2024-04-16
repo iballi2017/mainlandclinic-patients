@@ -6,7 +6,7 @@
 <?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 
 <!-- page title header -->
-<?php $pageTitle = "Cart";
+<?php $pageTitle = "Shop";
 include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
 <div class="my-4"></div>
@@ -51,8 +51,10 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     </div>
                     <div class="border-b border-x rounded-b-lg hover:rounded-none hover:border-b-0">
                         <div class="body p-6 b-4">
-                            <h3>Lorem, ipsum dolor.</h3>
-                            <p>N35,00</p>
+                            <a href="#">
+                                <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                            </a>
+                            <p class="text-xl font-bold">N35,000</p>
                         </div>
 
                         <div x-show="isOpen">
@@ -76,8 +78,12 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     </div>
                     <div class="border-b border-x rounded-b-lg hover:rounded-none hover:border-b-0">
                         <div class="body p-6 b-4">
-                            <h3>Lorem, ipsum dolor.</h3>
-                            <p>N35,00</p>
+                            <a href="#">
+                                <h3 class="title">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat ratione adipisci et sunt nam suscipit dolores aut nesciunt accusamus.
+                                </h3>
+                            </a>
+                            <p class="text-xl font-bold">N35,000</p>
                         </div>
 
                         <div x-show="isOpen">
