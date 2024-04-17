@@ -3,11 +3,11 @@
 
 <div class="p-2 sm:p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-<p class="h-56 flex items-center justify-center font-semibold text-sm text-accent-650">
-    No saved items.
-</p>
+    <p class="h-56 flex items-center justify-center font-semibold text-sm text-accent-650">
+        No saved items.
+    </p>
 
-    <ul class="hidden">
+    <ul class="">
         <li class="sm:flex items-center">
             <div class="hidden sm:block basis-[10%]">
                 <button class="inline-flex items-center rounded-md bg-red-700 px-2 py-1 text-xs font-medium text-red-50 ring-1 ring-inset ring-red-600/10">
