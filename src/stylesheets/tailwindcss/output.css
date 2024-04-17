@@ -1794,6 +1794,10 @@ input:checked + .toggle-bg {
   border-width: 0px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1867,6 +1871,11 @@ input:checked + .toggle-bg {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: hsl(108 93% 29% / var(--tw-border-opacity));
 }
 
 .border-b-accent-650 {
