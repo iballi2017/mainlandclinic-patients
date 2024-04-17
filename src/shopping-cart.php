@@ -11,6 +11,8 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
+    <a href="shop.php" class="inline-block mb-4 font-semibold text-primary-500 px-4 py-2 border-primary-500 border-2 rounded-lg">Continue shopping</a>
+
     <div class="">
 
         <div class="relative overflow-x-auto border rounded-lg">
@@ -29,7 +31,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                         <th scope="col" class="px-6 py-3">
                             Sub-total
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-6 py-3 text-right">
                             Remove
                         </th>
                     </tr>
@@ -61,8 +63,8 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                         <td class="px-6 py-4">
                             ₦283,800.00
                         </td>
-                        <td class="px-6 py-4">
-                            <button class="px-2 py-1.5  flex rounded bg-red-700">
+                        <td class="px-6 py-4 text-right">
+                            <button class="px-2 py-1.5 flex rounded bg-red-700 ml-auto">
                                 <i class="fas fa-times text-white"></i>
                             </button>
                         </td>
@@ -95,7 +97,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                             ₦283,800.00
                         </td>
                         <td class="px-6 py-4">
-                            <button class="px-2 py-1.5  flex rounded bg-red-700">
+                            <button class="px-2 py-1.5  flex rounded bg-red-700 ml-auto">
                                 <i class="fas fa-times text-white"></i>
                             </button>
                         </td>
@@ -128,7 +130,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                             ₦283,800.00
                         </td>
                         <td class="px-6 py-4">
-                            <button class="px-2 py-1.5  flex rounded bg-red-700">
+                            <button class="px-2 py-1.5  flex rounded bg-red-700 ml-auto">
                                 <i class="fas fa-times text-white"></i>
                             </button>
                         </td>
