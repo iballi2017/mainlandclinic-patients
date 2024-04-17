@@ -145,7 +145,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
         </div>
     </form>
     <div class="my-4"></div>
-    <button class="border-2 border-primary-500 px-6 py-2 text-primary-500 font-semibold rounded-lg">Go back</button>
+    <button class="back-history-btn | border-2 border-primary-500 px-6 py-2 text-primary-500 font-semibold rounded-lg">Go back</button>
 
 </div>
 
