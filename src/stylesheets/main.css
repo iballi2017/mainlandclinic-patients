@@ -357,12 +357,13 @@ button[role=tab][aria-selected=true] {
   display: none;
 }
 
-.product-action-details table th,
-.product-action-details table td {
+table.table-pd-1 th,
+table.table-pd-1 td {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   background-color: var(--cli-accent-50);
 }
+
 .product-action-details .social-icons .label {
   margin-right: 4.4em;
 }
