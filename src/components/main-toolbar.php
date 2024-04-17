@@ -109,11 +109,11 @@
                         <!-- <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a> -->
                         <a href="shop.php" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
 
-                        <a href="shopping-cart.php" aria-label="shopping cart" class="p-2 md:p-1.5 rounded-full bg-white">
+                        <!-- <a href="shopping-cart.php" aria-label="shopping cart" class="p-2 md:p-1.5 rounded-full bg-white">
                             <span class="block max-w-4">
                                 <img src="./assets/icons/icon-shopping-cart-outline-rounded.svg" alt="">
                             </span>
-                        </a>
+                        </a> -->
                         <a href="#" class="text-nowrap text-white bg-primary-500 rounded-r-full rounded-l-full hover:bg-primary-600 hover:text-white px-6 py-2 text-sm font-medium">Book an appointment</a>
                     </div>
                 </div>
