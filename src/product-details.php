@@ -38,7 +38,7 @@
             </div>
             <div class="product-action-details | col-span-12 sm:col-span-7">
 
-                <table class="w-full text-sm text-left rtl:text-right dark:text-gray-400">
+                <table class="table-pd-1 | w-full text-sm text-left rtl:text-right dark:text-gray-400">
                     <thead>
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600">
                             <th scope="col" colspan="2" class="border-0">
