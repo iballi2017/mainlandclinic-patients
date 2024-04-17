@@ -34,6 +34,8 @@
             </div>
 
             <p class="text-lg font-bold text-center">Order successful.</p>
+            <div class="my-2"></div>
+            <a href="shop.php" class="back-history-btn | block text-center text-primary-600 font-bold">Continue shopping</a>
         </div>
 
         <script>
