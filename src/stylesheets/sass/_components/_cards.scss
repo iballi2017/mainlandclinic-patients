@@ -1,3 +1,55 @@
 .product-listing-card{
+  .title{
+    height: 40px;
+    font-size: .9rem;
+    line-height: 20px;
+    overflow: hidden;
+    // background-color: red;
+    text-overflow: ellipsis;
+  }
+}
 
+.out-of-stock {
+  --textWidth: 100px;
+  position: relative;
+  &::after {
+    content: "Out of stock";
+    font-weight: 400;
+    font-size: 15px;
+    color: #1b2c19;
+    background: #f2cb56;
+    border: 1px solid #818181;
+    border-radius: 5px;
+    padding: 0.1em 0.3em;
+    position: absolute;
+    top: 46%;
+    left: calc(50% - calc(var(--textWidth) / 2));
+    display: block;
+    margin: 0 auto;
+    width: var(--textWidth);
+    z-index: 3;
+  }
+  &::before {
+    content: "";
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    position: absolute;
+    background-color: #ffffff8e;
+    // background-color: red;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &:hover {
+    img {
+      transform: scale(1);
+      transition: unset;
+    }
+    .card-footer {
+      display: none;
+    }
+  }
 }

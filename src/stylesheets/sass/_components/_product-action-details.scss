@@ -1,0 +1,15 @@
+.product-action-details {
+    .social-icons{
+        .label{
+            margin-right: 4.4em;
+        }
+
+        .social-icon {
+            max-width: 24px;
+            margin-right: .3em;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

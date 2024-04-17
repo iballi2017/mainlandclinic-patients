@@ -6,7 +6,11 @@
 </button> -->
 
 <aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 right-24 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+    <div class="h-full px-3 pt-4 pb-32 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <a href="./" class="flex flex-shrink-0 items-center mb-8">
+            <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"> -->
+            <img class="h-8 w-auto" src="./assets/images/brand-logo.svg" alt="Mainlandclinic">
+        </a>
         <ul class="space-y-2 font-medium">
             <li>
                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">

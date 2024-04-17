@@ -83,3 +83,10 @@
 //     background-color: blue;
 //   }
 // }
+
+
+
+.main-toolbar.sticky-top {
+  top: -100px;
+  transition: .5s;
+}

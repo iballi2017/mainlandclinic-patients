@@ -1,7 +1,7 @@
 <nav class="main-toolbar | bg-white sticky-top sticky z-40">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 md:h-auto items-center justify-between">
-            <div class="absolute inset-y-0 right-0 flex items-center md:hidden">
+        <div class="relative flex h-16 sm:h-auto items-center justify-between">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400" aria-expanded="false" data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button">
                     <span class="absolute -inset-0.5"></span>
@@ -24,7 +24,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex flex-1 items-center justify-start md:items-stretch md:justify-start">
+            <div class="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
                 <a href="./" class="flex flex-shrink-0 items-center">
                     <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"> -->
                     <img class="h-8 w-auto" src="./assets/images/brand-logo.svg" alt="Mainlandclinic">
@@ -39,8 +39,8 @@
                     </div>
                 </div> -->
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
-                <div class="hidden md:ml-6 md:block">
+            <div class="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div class="hidden sm:ml-6 sm:block">
                     <div class="flex items-center space-x-8 navlist">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About us</a>
@@ -109,10 +109,10 @@
                         <!-- <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a> -->
                         <a href="shop.php" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
 
-                        <a href="shopping-cart.php" aria-label="shopping cart" class="p-2 md:p-1.5 rounded-full bg-white">
-                            <span class="block max-w-4">
-                                <img src="./assets/icons/icon-shopping-cart-outline-rounded.svg" alt="">
-                            </span>
+                        <a href="" aria-label="shopping cart">
+                            <i class="fas fa-shopping-cart text-lg">
+                                <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">10</span>
+                            </i>
                         </a>
                         <a href="#" class="text-white bg-primary-500 rounded-r-full rounded-l-full hover:bg-primary-600 hover:text-white px-6 py-2 text-sm font-medium">Book an appointment</a>
                     </div>
@@ -138,6 +138,7 @@
         <?php include_once(__DIR__ . "./mobile-main-toolbar.php"); ?>
     </div>
 </nav>
+
 
 <!-- <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
     <span class="sr-only">Open sidebar</span>
