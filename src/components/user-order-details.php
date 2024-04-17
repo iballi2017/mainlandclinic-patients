@@ -46,8 +46,8 @@
                 </div>
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <div>
-                        <a href="#" class="block text-nowrap text-xs text-red-700 font-semibold">Cancel</a>
-                        <a href="#" class="rounded py-2 px-3 block text-nowrap text-xs bg-primary-500 hover:bg-primary-600 text-white font-semibold">Buy again</a>
+                        <a href="#" class="rounded py-2 px-3 block text-center text-nowrap text-xs bg-red-700 hover:bg-primary-600 text-white font-semibold">Cancel</a>
+                        <a href="#" class="rounded py-2 px-3 block text-center text-nowrap text-xs bg-primary-500 hover:bg-primary-600 text-white font-semibold">Buy again</a>
                     </div>
                 </div>
             </div>
