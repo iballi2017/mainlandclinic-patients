@@ -1132,6 +1132,10 @@ input:checked + .toggle-bg {
   bottom: 1rem;
 }
 
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .bottom-\[60px\] {
   bottom: 60px;
 }
@@ -1142,6 +1146,10 @@ input:checked + .toggle-bg {
 
 .left-0 {
   left: 0px;
+}
+
+.left-8 {
+  left: 2rem;
 }
 
 .right-0 {
@@ -1156,6 +1164,10 @@ input:checked + .toggle-bg {
   right: 1rem;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .start-6 {
   inset-inline-start: 1.5rem;
 }
@@ -1166,14 +1178,6 @@ input:checked + .toggle-bg {
 
 .top-8 {
   top: 2rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.top-16 {
-  top: 4rem;
 }
 
 .z-0 {
@@ -1926,11 +1930,6 @@ input:checked + .toggle-bg {
   background-color: rgb(195 195 195 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(164 202 254 / var(--tw-bg-opacity));
@@ -1949,6 +1948,11 @@ input:checked + .toggle-bg {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -2540,6 +2544,60 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.after\:mx-2::after {
+  content: var(--tw-content);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.after\:mx-6::after {
+  content: var(--tw-content);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.after\:hidden::after {
+  content: var(--tw-content);
+  display: none;
+}
+
+.after\:h-1::after {
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:border-b::after {
+  content: var(--tw-content);
+  border-bottom-width: 1px;
+}
+
+.after\:border-gray-200::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.after\:text-gray-200::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.after\:content-\[\'\'\]::after {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\/\'\]::after {
+  --tw-content: '/';
+  content: var(--tw-content);
+}
+
 .hover\:rounded-none:hover {
   border-radius: 0px;
 }
@@ -2932,6 +2990,18 @@ input:checked + .toggle-bg {
   --tw-ring-offset-color: #1F2937;
 }
 
+.dark\:after\:border-gray-700:is(.dark *)::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.dark\:after\:text-gray-500:is(.dark *)::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .dark\:hover\:\!bg-primary-700:hover:is(.dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: hsl(0 0% 36% / var(--tw-bg-opacity)) !important;
@@ -3098,6 +3168,10 @@ input:checked + .toggle-bg {
     margin-left: 1.5rem;
   }
 
+  .sm\:ms-2 {
+    margin-inline-start: 0.5rem;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -3108,6 +3182,10 @@ input:checked + .toggle-bg {
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:inline-flex {
+    display: inline-flex;
   }
 
   .sm\:hidden {
@@ -3226,6 +3304,21 @@ input:checked + .toggle-bg {
   .sm\:leading-7 {
     line-height: 1.75rem;
   }
+
+  .sm\:after\:inline-block::after {
+    content: var(--tw-content);
+    display: inline-block;
+  }
+
+  .sm\:after\:hidden::after {
+    content: var(--tw-content);
+    display: none;
+  }
+
+  .sm\:after\:content-\[\'\'\]::after {
+    --tw-content: '';
+    content: var(--tw-content);
+  }
 }
 
 @media (min-width: 768px) {
@@ -3253,6 +3346,10 @@ input:checked + .toggle-bg {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -3263,6 +3360,10 @@ input:checked + .toggle-bg {
 
   .md\:w-48 {
     width: 12rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:items-stretch {
@@ -3306,6 +3407,14 @@ input:checked + .toggle-bg {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:after\:mx-10::after {
+    content: var(--tw-content);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 }
 

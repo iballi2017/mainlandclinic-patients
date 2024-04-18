@@ -6,7 +6,7 @@
 <?php include_once(__DIR__ . "./components/main-toolbar.php"); ?>
 
 <!-- page title header -->
-<?php $pageTitle = "Checkout";
+<?php $routes = ["Home", "Checkout"];
 include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
 <div class="my-4"></div>
