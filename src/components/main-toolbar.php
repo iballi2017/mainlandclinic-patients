@@ -114,7 +114,7 @@
                                 <img src="./assets/icons/icon-shopping-cart-outline-rounded.svg" alt="">
                             </span>
                         </a> -->
-                        <a href="#" class="text-nowrap text-white bg-primary-500 rounded-r-full rounded-l-full hover:bg-primary-600 hover:text-white px-6 py-2 text-sm font-medium">Book an appointment</a>
+                        <a href="book-appointment.php" class="text-nowrap text-white bg-primary-500 rounded-r-full rounded-l-full hover:bg-primary-600 hover:text-white px-6 py-2 text-sm font-medium">Book an appointment</a>
                     </div>
                 </div>
             </div>

@@ -468,6 +468,49 @@ footer .navbar-brand {
   transition: all 1s;
 }
 
+.appointment-form-stepper .progress-point {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border: 2px solid var(--clr-accent-730);
+}
+.appointment-form-stepper .progress-point .inner {
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--clr-accent-730);
+  border: 1px solid white;
+}
+.appointment-form-stepper .step.current {
+  color: var(--clr-primary-500);
+  font-weight: 600;
+}
+.appointment-form-stepper .step.current .progress-point {
+  border: 2px solid var(--clr-primary-500);
+}
+.appointment-form-stepper .step.current .progress-point .inner {
+  background-color: var(--clr-primary-500);
+}
+
+.stepper {
+  background-color: lightblue;
+}
+.stepper .pages {
+  width: 400%;
+  display: flex;
+  margin-left: 0;
+  transition: margin-left 300ms ease-in-out;
+}
+.stepper .pages .page {
+  flex-basis: 100%;
+}
+.stepper .pages .page:nth-child(odd) {
+  background-color: lightgreen;
+}
+
 :root {
   /* COLORS */
   --clr-primary-50: hsla(86, 81%, 75%, 1);
@@ -480,6 +523,7 @@ footer .navbar-brand {
   --clr-accent-500: hsl(216, 42%, 95%);
   --clr-accent-600: hsl(0, 0%, 85%);
   --clr-accent-700: #c4c4c4;
+  --clr-accent-730: #ababab;
   --clr-accent-750: #828282;
   --clr-neutral-500: #ffffff;
   --clr-secondary-500: hsl(114, 28%, 14%);
