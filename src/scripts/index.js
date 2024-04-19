@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const progressBar = form_stepper.parentElement.querySelector(".progress");
             const stepper = new Stepper(pages, pages.children.length, progressBar);
 
-            stepper.stepForward(step_forward)
-            stepper.stepBackward(step_backward)
+            // stepper.stepForward(step_forward)
+            // stepper.stepBackward(step_backward)
 
         }
     }
@@ -85,30 +85,48 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const stepperController = () => {
         const controls = document.querySelectorAll(".step-control");
-        for (let i = 0; i < controls.length; i++) {
-            const control = controls[i];
-            console.log("control: ", control)
+        const steppers = document.querySelectorAll(".stepper");
+        const TAGNAME = {
+            BUTTON: 'BUTTON',
+            INPUT: 'INPUT'
+        }
 
-            const controller = control.getAttribute("data-custom-target");
-            const stepper_wrapper = document.querySelector(controller)
-            // console.log("stepper_wrapper: ", stepper_wrapper);
+        for (let i = 0; i < steppers.length; i++) {
+            const stepper_wrapper = steppers[i];
+            const stepper_id = stepper_wrapper.getAttribute("id")
             const pages = stepper_wrapper.querySelector(".pages");
             const progressBar = stepper_wrapper.parentElement.querySelector(".progress");
             const stepper = new Stepper(pages, pages.children.length, progressBar);
 
-            if (control.classList.contains("next-btn-check")) {
-                stepper.stepForwardChange(control)
-            }
-            if (control.classList.contains("prev-btn-check")) {
-                stepper.stepBackwardChange(control)
-            }
-            if (control.classList.contains("prev-btn")) {
-                stepper.stepBackward(control)
-            }
-            if (control.classList.contains("next-btn")) {
-                stepper.stepForward(control)
-            }
+            for (let j = 0; j < controls.length; j++) {
+                const control = controls[j];
+                const controller = control.getAttribute("data-custom-target");
+                if (controller === stepper_id) {
 
+                    /**For buttons */
+                    if (control.tagName === TAGNAME.BUTTON && control.classList.contains("next-btn")) {
+                        control.addEventListener("click", () => {
+                            stepper.stepForward()
+                        })
+                    }
+                    if (control.tagName === TAGNAME.BUTTON && control.classList.contains("prev-btn")) {
+                        control.addEventListener("click", () => {
+                            stepper.stepBackward()
+                        })
+                    }
+                    /**For Checkboxes */
+                    if (control.tagName === TAGNAME.INPUT && control.classList.contains("next-btn")) {
+                        control.addEventListener("change", () => {
+                            stepper.stepForward()
+                        })
+                    }
+                    if (control.tagName === TAGNAME.INPUT && control.classList.contains("prev-btn")) {
+                        control.addEventListener("change", () => {
+                            stepper.stepBackward()
+                        })
+                    }
+                }
+            }
         }
     }
 
@@ -131,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    forwardRouteOnChecked();
+    // forwardRouteOnChecked();
     // prevNxtButton();
     init();
 

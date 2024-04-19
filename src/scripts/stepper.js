@@ -16,48 +16,25 @@ class Stepper {
         this.progressPoints = this.progressBar.children;
     }
 
-    stepForward(btn) {
-        btn ? btn.addEventListener("click", () => {
-            if (this.marginCount != -this.maxPages) {
-                this.marginCount = this.marginCount - this.fullWidth
-                this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
-                this.updateProgress(this.marginCount);
-            }
-        }) : null;
-    }
-    stepBackward(btn) {
-        btn ? btn.addEventListener("click", () => {
-            if (this.marginCount < 0) {
-                this.marginCount = this.marginCount + this.fullWidth
-                this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
-                this.updateProgress(this.marginCount);
-            }
-        }) : null;
-    }
-    stepForwardChange(check) {
-        console.log("change")
-        check ? check.addEventListener("change", () => {
-            console.log("check: ", check)
-            if(!check.checked) return;
-            if (this.marginCount != -this.maxPages) {
-                this.marginCount = this.marginCount - this.fullWidth
-                this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
-                this.updateProgress(this.marginCount);
-            }
-        }) : null;
-    }
-    stepBackwardChange(check) {
-        check ? check.addEventListener("change", () => {
-            if(!check.checked) return;
-            if (this.marginCount < 0) {
-                this.marginCount = this.marginCount + this.fullWidth
-                this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
-                this.updateProgress(this.marginCount)
-            }
-        }) : null;
-    }
-    updateProgress(marginCount) {
 
+    stepForward() {
+        if (this.marginCount != -this.maxPages) {
+            this.marginCount -= this.fullWidth
+            this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
+            this.updateProgress(this.marginCount);
+            console.log("this.marginCount: ", this.marginCount)
+        }
+    }
+    stepBackward() {
+        if (this.marginCount < 0) {
+            this.marginCount = this.marginCount + this.fullWidth
+            this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
+            this.updateProgress(this.marginCount);
+        }
+    }
+
+
+    updateProgress(marginCount) {
         let pagesWidthNotPassed = this.pagesWrapperWidth + marginCount;
         let numberOfScreensNotPassed = pagesWidthNotPassed / this.fullWidth;
         let currentScreenNumber = (this.pageCount + 1) - numberOfScreensNotPassed;

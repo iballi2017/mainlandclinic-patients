@@ -78,16 +78,14 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                         <ul class="grid grid-cols-2 items-stretch gap-4 justify-center min-h-40">
                             <li class="custom-checkbox | col-span-2 sm:col-span-1 flex flex-stretch justify-center">
-                                <input type="radio" name="type_of_patient" id="new_patient" value="new_patient" class="step-control next-btn-check"
-                                data-custom-target="#free-online-appointment-form-stepper">
+                                <input type="radio" name="type_of_patient" id="new_patient" value="new_patient" class="step-control next-btn" data-custom-target="free-online-appointment-form-stepper">
                                 <label class="text-center cursor-pointer block w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" for="new_patient">
                                     <p class="text-colored text-2xl font-bold text-accent-750">New patient</p>
                                     <p class="text-lg">Provide your Information</p>
                                 </label>
                             </li>
                             <li class="custom-checkbox | col-span-2 sm:col-span-1 flex flex-stretch justify-center">
-                                <input type="radio" name="type_of_patient" id="returning_patient" value="returning_patient" class="step-control next-btn-check"
-                                data-custom-target="#free-online-appointment-form-stepper">
+                                <input type="radio" name="type_of_patient" id="returning_patient" value="returning_patient" class="step-control next-btn" data-custom-target="free-online-appointment-form-stepper">
                                 <label class="text-center cursor-pointer block w-full py-6 px-10 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" for="returning_patient">
                                     <p class="text-colored text-2xl font-bold text-accent-750">Returning patient</p>
                                     <p class="text-lg">Request using your Mainland clinics account</p>
@@ -99,14 +97,6 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                 <!-- Page 2 -->
                 <li class="page p-6">
                     <fieldset class="">
-                            <li class="custom-checkbox | col-span-2 sm:col-span-1 flex flex-stretch justify-center">
-                                <input type="radio" name="type_of_patient" id="returning_patient" value="returning_patient" class="step-control prev-btn-check"
-                                data-custom-target="#free-online-appointment-form-stepper">
-                                <label class="text-center cursor-pointer block w-full py-6 px-10 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" for="returning_patient">
-                                    <p class="text-colored text-2xl font-bold text-accent-750">Returning patient</p>
-                                    <p class="text-lg">Request using your Mainland clinics account</p>
-                                </label>
-                            </li>
                         <legend class="text-2xl font-bold text-center">Input the right information</legend>
 
                         <div class="my-10"></div>
@@ -208,8 +198,8 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                         </div>
                     </fieldset>
                     <div class="my-8"></div>
-                    <button data-custom-target="#free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Previous</button>
-                    <button data-custom-target="#free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
+                    <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Previous</button>
+                    <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
 
                 </li>
                 <!-- Page 3 -->
@@ -219,14 +209,14 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
             </ul>
         </div>
 
-        <ul class="flex items-center gap-8 my-8">
+        <!-- <ul class="flex items-center gap-8 my-8">
             <li>
-                <button type="button" class="step-backward">Previous</button>
+                <button type="button" class="step-control prev-btn step-backward" data-custom-target="free-online-appointment-form-stepper">Previous</button>
             </li>
             <li>
-                <button type="button" class="step-forward">Next</button>
+                <button type="button" class="step-control next-btn step-forward" data-custom-target="free-online-appointment-form-stepper">Next</button>
             </li>
-        </ul>
+        </ul> -->
     </form>
 
 
