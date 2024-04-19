@@ -90,28 +90,23 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("control: ", control)
 
             const controller = control.getAttribute("data-custom-target");
-            // console.log("controller: ", controller)
-            const prevBtnCheck = control.classList.contains("prev-btn-check") ? control : null;
-            const nextBtnCheck = control.classList.contains("next-btn-check") ? control : null;
-            const prevBtn = control.classList.contains("prev-btn") ? control : null;
-            const nextBtn = control.classList.contains("next-btn") ? control : null;
             const stepper_wrapper = document.querySelector(controller)
-            console.log("stepper_wrapper: ", stepper_wrapper);
+            // console.log("stepper_wrapper: ", stepper_wrapper);
             const pages = stepper_wrapper.querySelector(".pages");
             const progressBar = stepper_wrapper.parentElement.querySelector(".progress");
             const stepper = new Stepper(pages, pages.children.length, progressBar);
 
             if (control.classList.contains("next-btn-check")) {
-                stepper.stepForwardChange(nextBtnCheck)
+                stepper.stepForwardChange(control)
             }
             if (control.classList.contains("prev-btn-check")) {
-                stepper.stepBackwardChange(prevBtnCheck)
+                stepper.stepBackwardChange(control)
             }
             if (control.classList.contains("prev-btn")) {
-                stepper.stepBackward(prevBtn)
+                stepper.stepBackward(control)
             }
             if (control.classList.contains("next-btn")) {
-                stepper.stepForward(nextBtn)
+                stepper.stepForward(control)
             }
 
         }

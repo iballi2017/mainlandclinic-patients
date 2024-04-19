@@ -99,6 +99,14 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                 <!-- Page 2 -->
                 <li class="page p-6">
                     <fieldset class="">
+                            <li class="custom-checkbox | col-span-2 sm:col-span-1 flex flex-stretch justify-center">
+                                <input type="radio" name="type_of_patient" id="returning_patient" value="returning_patient" class="step-control prev-btn-check"
+                                data-custom-target="#free-online-appointment-form-stepper">
+                                <label class="text-center cursor-pointer block w-full py-6 px-10 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" for="returning_patient">
+                                    <p class="text-colored text-2xl font-bold text-accent-750">Returning patient</p>
+                                    <p class="text-lg">Request using your Mainland clinics account</p>
+                                </label>
+                            </li>
                         <legend class="text-2xl font-bold text-center">Input the right information</legend>
 
                         <div class="my-10"></div>
