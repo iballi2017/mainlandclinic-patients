@@ -45,3 +45,18 @@ button[role="tab"] {
     border-bottom: 2px solid var(--clr-primary-500);
   }
 }
+
+.custom-checkbox {
+  input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked {
+      & + label {
+        .text-colored {
+          color: var(--clr-primary-500);
+        }
+      }
+    }
+  }
+}

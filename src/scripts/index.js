@@ -51,20 +51,39 @@ document.addEventListener('DOMContentLoaded', function () {
     /**Form widget stepper */
     const formWidgetStepper = () => {
         const form_steppers = document.querySelectorAll(".stepper");
+
         for (let i = 0; i < form_steppers.length; i++) {
             const form_stepper = form_steppers[i];
             const pages = form_stepper.querySelector(".pages");
-            pages.style.width =( pages.children.length * 100) + "%";
+            pages.style.width = (pages.children.length * 100) + "%";
             const step_forward = form_stepper.nextElementSibling.querySelector(".step-forward")
             const step_backward = form_stepper.nextElementSibling.querySelector(".step-backward")
-            const stepper = new Stepper(pages, pages.children.length);
+            const progressBar = form_stepper.parentElement.querySelector(".progress");
+            const stepper = new Stepper(pages, pages.children.length, progressBar);
+
             stepper.stepForward(step_forward)
             stepper.stepBackward(step_backward)
-            
+
         }
     }
 
 
+    /**route on checked */
+    const forwardRouteOnChecked = () => {
+        const route_checkboxes = document.querySelectorAll(".route-checkbox");
+        const free_online_appointment_form = document.querySelector("#free-online-appointment-form");
+        const form_stepper = free_online_appointment_form.querySelector(".stepper")
+        const pages = free_online_appointment_form.querySelector(".pages")
+        const progressBar = form_stepper.parentElement.querySelector(".progress");
+        for (let i = 0; i < route_checkboxes.length; i++) {
+            const checkbox = route_checkboxes[i];
+            const stepper = new Stepper(pages, pages.children.length, progressBar);
+            stepper.stepForwardChange(checkbox);
+        }
+    }
+
+
+    forwardRouteOnChecked();
     init();
 
 })
