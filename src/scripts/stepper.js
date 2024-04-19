@@ -26,6 +26,7 @@ class Stepper {
         }) : null;
     }
     stepBackward(btn) {
+        console.log("btn: ", btn)
         btn ? btn.addEventListener("click", () => {
             if (this.marginCount < 0) {
                 this.marginCount = this.marginCount + this.fullWidth
@@ -35,6 +36,7 @@ class Stepper {
         }) : null;
     }
     stepForwardChange(check) {
+        console.log("change")
         check ? check.addEventListener("change", () => {
             if(!check.checked) return;
             if (this.marginCount != -this.maxPages) {

@@ -66,8 +66,9 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                 </span>
             </li>
         </ol>
-        <div class="stepper overflow-hidden py-8 min-h-max">
+        <div class="stepper py-8 min-h-max" id="free-online-appointment-form-stepper">
             <ul class="pages ">
+                <!-- Page1 -->
                 <li class="page p-6">
                     <fieldset class="">
                         <legend class="text-2xl font-bold text-center">Booking an appointment with us</legend>
@@ -77,16 +78,16 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                         <ul class="grid grid-cols-2 items-stretch gap-4 justify-center min-h-40">
                             <li class="custom-checkbox | col-span-2 sm:col-span-1 flex flex-stretch justify-center">
-                                <input type="radio" name="type_of_patient" id="new_patient" value="new_patient"
-                                class="route-checkbox">
+                                <input type="radio" name="type_of_patient" id="new_patient" value="new_patient" class="step-control next-btn-check"
+                                data-custom-target="#free-online-appointment-form-stepper">
                                 <label class="text-center cursor-pointer block w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" for="new_patient">
                                     <p class="text-colored text-2xl font-bold text-accent-750">New patient</p>
                                     <p class="text-lg">Provide your Information</p>
                                 </label>
                             </li>
                             <li class="custom-checkbox | col-span-2 sm:col-span-1 flex flex-stretch justify-center">
-                                <input type="radio" name="type_of_patient" id="returning_patient" value="returning_patient"
-                                class="route-checkbox">
+                                <input type="radio" name="type_of_patient" id="returning_patient" value="returning_patient" class="step-control next-btn-check"
+                                data-custom-target="#free-online-appointment-form-stepper">
                                 <label class="text-center cursor-pointer block w-full py-6 px-10 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" for="returning_patient">
                                     <p class="text-colored text-2xl font-bold text-accent-750">Returning patient</p>
                                     <p class="text-lg">Request using your Mainland clinics account</p>
@@ -95,10 +96,117 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                         </ul>
                     </fieldset>
                 </li>
+                <!-- Page 2 -->
                 <li class="page p-6">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident iste placeat repellendus ad debitis minima, sit nesciunt eligendi perspiciatis corrupti commodi eius nobis? Non quaerat velit temporibus commodi, explicabo dolor quae placeat distinctio consectetur enim molestiae autem, iste, odio tempore. Officia obcaecati voluptate suscipit explicabo aliquid cum cupiditate consequuntur nisi veritatis. Dolorum quam ut ratione nisi tempora sunt soluta consectetur eaque distinctio modi quasi, odio officiis quaerat nam ex, omnis cum incidunt numquam delectus perferendis veritatis est, quo repellat exercitationem. Autem, praesentium qui quaerat fugit similique voluptates. Natus nesciunt quidem amet fuga ipsa saepe in adipisci nisi. Ullam rem optio, architecto numquam illum maiores tempora. Assumenda fugit doloribus necessitatibus adipisci, esse in quo quos laudantium aliquid commodi natus fugiat hic explicabo! Atque aliquam cumque dolorum quaerat porro vero facere, ullam exercitationem non animi corporis nisi temporibus iure. Reprehenderit explicabo, suscipit officia assumenda maxime consequuntur minima. Cum cumque sunt quo est! Molestiae, voluptatibus recusandae nemo hic aspernatur veritatis placeat tempora repellat libero, vel doloribus labore quibusdam id neque rerum! Corporis nihil voluptates, veritatis cum ex maiores, similique magnam minima rem neque optio modi reprehenderit. Unde recusandae eligendi modi molestias dolores accusantium et officiis consectetur fugiat. Qui dolorum nobis optio ducimus soluta?
+                    <fieldset class="">
+                        <legend class="text-2xl font-bold text-center">Input the right information</legend>
+
+                        <div class="my-10"></div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="bg-secondary-500 p-4">
+                                <div class="max-w-4xl">
+                                    <img class="rounded-t-lg" src="./assets/images/brand-logo-inverse.svg" alt="img" />
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <fieldset>
+                                    <legend class="sr-only">Personal information</legend>
+
+                                    <div class="grid grid-cols-12 gap-4">
+                                        <div class="col-span-12 sm:col-span-4">
+                                            <label for="first_name" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
+                                            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-4">
+                                            <label for="middle_name" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Middle Name</label>
+                                            <input type="text" id="middle_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-4">
+                                            <label for="last_name" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
+                                            <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12">
+                                            <label for="suffix" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Suffix <small class="text-accent-700">(Optional)</small></label>
+                                            <select id="suffix" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                <option selected>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-6">
+                                            <label for="email" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+                                            <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-6">
+                                            <label for="phone" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
+                                            <input type="text" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-6">
+                                            <label for="dob" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Birth</label>
+                                            <input type="date" id="dob" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-6">
+                                            <label for="sex" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
+                                            <select id="sex" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                <option value="male" selected>Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="my-2"></div>
+                                <fieldset>
+                                    <legend class="sr-only">Address</legend>
+                                    <div class="grid grid-cols-12 gap-4">
+                                        <div class="col-span-12">
+                                            <label for="address" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                                            <input type="text" id="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-12 sm:col-span-6">
+                                            <label for="city" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Town/City</label>
+                                            <input type="text" id="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <label for="state" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
+                                            <select id="state" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                <option value="" selected>....</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <label for="zipcode" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Zip</label>
+                                            <input type="text" id="zipcode" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="my-2"></div>
+                                <fieldset>
+                                    <div class="grid grid-cols-1 gap-4">
+                                        <div class="col-span-1">
+                                            <legend class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Are you the patient?</legend>
+                                            <ul class="flex items-center font-semibold gap-8">
+                                                <li>
+                                                    <input type="radio" name="are_you_the_patient" id="yes" value="yes">
+                                                    <label for="yes" class="cursor-pointer">Yes</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="are_you_the_patient" id="no" value="no">
+                                                    <label for="no" class="cursor-pointer">No</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="my-8"></div>
+                    <button data-custom-target="#free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Previous</button>
+                    <button data-custom-target="#free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
+
                 </li>
+                <!-- Page 3 -->
                 <li class="page p-6">Step 3</li>
+                <!-- Page 4 -->
                 <li class="page p-6">Step 4</li>
             </ul>
         </div>

@@ -34,6 +34,10 @@
 .stepper {
 //   background-color: lightblue;
   display: none;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
   & + * {
     display: none;
   }

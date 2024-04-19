@@ -36,7 +36,7 @@
                         <div class="col-span-6 sm:col-span-3">
                             <label for="sex" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
                             <select id="sex" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                <option va;ue="male" selected>Male</option>
+                                <option value="male" selected>Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
@@ -44,7 +44,7 @@
                         <div class="col-span-6 sm:col-span-3">
                             <label for="regligion" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Religion</label>
                             <select id="regligion" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                <option va;ue="christianity" selected>Christianity</option>
+                                <option value="christianity" selected>Christianity</option>
                                 <option value="islam">Islam</option>
                                 <option value="traditionalist">Traditionalist</option>
                                 <option value="atheist">Atheist</option>
