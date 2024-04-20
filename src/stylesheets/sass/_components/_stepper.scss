@@ -34,6 +34,10 @@
 .stepper {
 //   background-color: lightblue;
   display: none;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
   & + * {
     display: none;
   }
@@ -48,6 +52,7 @@
     display: flex;
     // "margin-left" will be handled in javascript according to click event
     margin-left: 0;
+    // margin-left: -100%;
     transition: margin-left 300ms ease-in-out;
     .page {
       flex-basis: 100%;

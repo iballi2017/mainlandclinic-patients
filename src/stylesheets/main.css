@@ -505,6 +505,10 @@ footer .navbar-brand {
 
 .stepper {
   display: none;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
 }
 .stepper + * {
   display: none;

@@ -61,29 +61,96 @@ document.addEventListener('DOMContentLoaded', function () {
             const progressBar = form_stepper.parentElement.querySelector(".progress");
             const stepper = new Stepper(pages, pages.children.length, progressBar);
 
-            stepper.stepForward(step_forward)
-            stepper.stepBackward(step_backward)
+            // stepper.stepForward(step_forward)
+            // stepper.stepBackward(step_backward)
 
         }
     }
+
 
 
     /**route on checked */
     const forwardRouteOnChecked = () => {
         const route_checkboxes = document.querySelectorAll(".route-checkbox");
-        const free_online_appointment_form = document.querySelector("#free-online-appointment-form");
-        const form_stepper = free_online_appointment_form.querySelector(".stepper")
-        const pages = free_online_appointment_form.querySelector(".pages")
-        const progressBar = form_stepper.parentElement.querySelector(".progress");
         for (let i = 0; i < route_checkboxes.length; i++) {
             const checkbox = route_checkboxes[i];
+            const dt = checkbox.getAttribute("data-custom-target")
+            const stepper_wrapper = document.querySelector(dt)
+            const pages = stepper_wrapper.querySelector(".pages");
+            const progressBar = stepper_wrapper.parentElement.querySelector(".progress");
             const stepper = new Stepper(pages, pages.children.length, progressBar);
             stepper.stepForwardChange(checkbox);
         }
     }
 
+    const stepperController = () => {
+        const controls = document.querySelectorAll(".step-control");
+        const steppers = document.querySelectorAll(".stepper");
+        const TAGNAME = {
+            BUTTON: 'BUTTON',
+            INPUT: 'INPUT'
+        }
 
-    forwardRouteOnChecked();
+        for (let i = 0; i < steppers.length; i++) {
+            const stepper_wrapper = steppers[i];
+            const stepper_id = stepper_wrapper.getAttribute("id")
+            const pages = stepper_wrapper.querySelector(".pages");
+            const progressBar = stepper_wrapper.parentElement.querySelector(".progress");
+            const stepper = new Stepper(pages, pages.children.length, progressBar);
+
+            for (let j = 0; j < controls.length; j++) {
+                const control = controls[j];
+                const controller = control.getAttribute("data-custom-target");
+                if (controller === stepper_id) {
+
+                    /**For buttons */
+                    if (control.tagName === TAGNAME.BUTTON && control.classList.contains("next-btn")) {
+                        control.addEventListener("click", () => {
+                            stepper.stepForward()
+                        })
+                    }
+                    if (control.tagName === TAGNAME.BUTTON && control.classList.contains("prev-btn")) {
+                        control.addEventListener("click", () => {
+                            stepper.stepBackward()
+                        })
+                    }
+                    /**For Checkboxes */
+                    if (control.tagName === TAGNAME.INPUT && control.classList.contains("next-btn")) {
+                        control.addEventListener("change", () => {
+                            stepper.stepForward()
+                        })
+                    }
+                    if (control.tagName === TAGNAME.INPUT && control.classList.contains("prev-btn")) {
+                        control.addEventListener("change", () => {
+                            stepper.stepBackward()
+                        })
+                    }
+                }
+            }
+        }
+    }
+
+    stepperController();
+
+
+    const prevNxtButton = () => {
+        const next_btn = document.querySelectorAll(".next-btn");
+        // const route_checkboxes = document.querySelectorAll(".route-checkbox");
+        for (let i = 0; i < next_btn.length; i++) {
+            const button = next_btn[i];
+            const dt = button.getAttribute("data-custom-target")
+            const stepper_wrapper = document.querySelector(dt)
+            const pages = stepper_wrapper.querySelector(".pages");
+            const progressBar = stepper_wrapper.parentElement.querySelector(".progress");
+            const stepper = new Stepper(pages, pages.children.length, progressBar);
+            stepper.stepForward(button);
+        }
+    }
+
+
+
+    // forwardRouteOnChecked();
+    // prevNxtButton();
     init();
 
 })

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Counter</title>
+  </head>
+  <body>
+    <button id="increment">Increment</button>
+    <button id="decrement">Decrement</button>
+    <script>
+      class Counter {
+        constructor() {
+          this.value = 0;
+        }
+
+        increment() {
+          this.value++;
+          this.readValue();
+          //   return this.value;
+        }
+
+        decrement() {
+          if (this.value > 0) {
+            this.value--;
+          }
+          this.readValue();
+          //   return this.value;
+        }
+
+        reset() {
+          this.value = 0;
+          this.readValue();
+          return this.value;
+        }
+
+        readValue() {
+          console.log("this.value: ", this.value);
+        }
+      }
+
+      // Example usage:
+      const counter = new Counter();
+      const increment = document.querySelector("#increment");
+      const decrement = document.querySelector("#decrement");
+
+      increment.addEventListener("click", () => {
+        counter.increment();
+      });
+      decrement.addEventListener("click", () => {
+        counter.decrement();
+      });
+      //   console.log(counter.increment()); // Output: 1
+      //   console.log(counter.increment()); // Output: 2
+      //   console.log(counter.decrement()); // Output: 1
+      //   console.log(counter.reset()); // Output: 0
+    </script>
+  </body>
+</html>
