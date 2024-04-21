@@ -69,7 +69,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
         <div class="stepper py-8 min-h-max" id="free-online-appointment-form-stepper">
             <ul class="pages ">
                 <!-- Page1 -->
-                <li class="page p-6">
+                <li class="page">
                     <fieldset class="">
                         <legend class="text-2xl font-bold text-center">Booking an appointment with us</legend>
                         <p class="text-primary-700 font-semibold text-center">Select one to begin the process</p>
