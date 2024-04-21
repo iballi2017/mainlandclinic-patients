@@ -69,7 +69,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
         <div class="stepper py-8 min-h-max" id="free-online-appointment-form-stepper">
             <ul class="pages ">
                 <!-- Page1 -->
-                <li class="page">
+                <li class="page p-2 sm:p-6">
                     <fieldset class="">
                         <legend class="text-2xl font-bold text-center">Booking an appointment with us</legend>
                         <p class="text-primary-700 font-semibold text-center">Select one to begin the process</p>
@@ -95,7 +95,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     </fieldset>
                 </li>
                 <!-- Page 2 -->
-                <li class="page p-6">
+                <li class="page p-2 sm:p-6">
                     <fieldset class="">
                         <legend class="text-2xl font-bold text-center">Input the right information</legend>
 
@@ -198,14 +198,16 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                         </div>
                     </fieldset>
                     <div class="my-8"></div>
-                    <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Previous</button>
-                    <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
-
+                    <div class="flex items-center justify-between">
+                        <!-- <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Previous</button> -->
+                        <span></span>
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
+                    </div>
                 </li>
                 <!-- Page 3 -->
-                <li class="page p-6">Step 3</li>
+                <li class="page p-2 sm:p-6">Step 3</li>
                 <!-- Page 4 -->
-                <li class="page p-6">Step 4</li>
+                <li class="page p-2 sm:p-6">Step 4</li>
             </ul>
         </div>
 

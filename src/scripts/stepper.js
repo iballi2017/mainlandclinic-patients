@@ -22,7 +22,6 @@ class Stepper {
             this.marginCount -= this.fullWidth
             this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
             this.updateProgress(this.marginCount);
-            console.log("this.marginCount: ", this.marginCount)
         }
     }
     stepBackward() {
