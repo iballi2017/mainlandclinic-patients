@@ -92,6 +92,11 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                                 </label>
                             </li>
                         </ul>
+                        <div class="my-8"></div>
+                        <div class="flex items-center justify-between">
+                            <span></span>
+                            <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Proceed</button>
+                        </div>
                     </fieldset>
                 </li>
                 <!-- Page 2 -->
@@ -103,7 +108,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                         <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="bg-secondary-500 p-4">
-                                <div class="max-w-4xl">
+                                <div class="max-w-24">
                                     <img class="rounded-t-lg" src="./assets/images/brand-logo-inverse.svg" alt="img" />
                                 </div>
                             </div>
@@ -199,21 +204,95 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     </fieldset>
                     <div class="my-8"></div>
                     <div class="flex items-center justify-between">
-                        <!-- <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Previous</button> -->
-                        <span></span>
-                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-auto inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Back</button>
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
                     </div>
                 </li>
                 <!-- Page 3 -->
-                <li class="page p-2 sm:p-6">Step 3</li>
+                <li class="page p-2 sm:p-6">
+
+                    <fieldset class="">
+                        <legend class="text-2xl font-bold text-center">Tell us your concerns </legend>
+
+                        <div class="my-10"></div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="bg-secondary-500 p-4">
+                                <div class="max-w-24">
+                                    <img class="rounded-t-lg" src="./assets/images/brand-logo-inverse.svg" alt="img" />
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <fieldset>
+                                    <legend class="sr-only">Personal information</legend>
+
+                                    <div class="grid grid-cols-12 gap-4">
+                                        <div class="col-span-12">
+                                            <label for="medical_concern" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                Tell us about your main medical concern
+                                            </label>
+                                            <textarea name="medical_concern" id="medical_concern" cols="30" rows="5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required></textarea>
+                                        </div>
+                                        <div class="col-span-12">
+                                            <label for="other_concern" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                Are there any other medical concern you would like to let us know about?
+                                            </label>
+                                            <textarea name="other_concern" id="other_concern" cols="30" rows="5" placeholder="I also have ..." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="my-8"></div>
+                    <div class="flex items-center justify-between">
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Back</button>
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
+                    </div>
+                </li>
                 <!-- Page 4 -->
-                <li class="page p-2 sm:p-6">Step 4</li>
+                <li class="page p-2 sm:p-6">
+
+                    <fieldset class="">
+                        <legend class="text-2xl font-bold text-center">Input the time and date</legend>
+
+                        <div class="my-10"></div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="bg-secondary-500 p-4">
+                                <div class="max-w-24">
+                                    <img class="rounded-t-lg" src="./assets/images/brand-logo-inverse.svg" alt="img" />
+                                </div>
+                            </div>
+                            <div class="p-4">
+
+                                <div class="grid grid-cols-12 gap-4">
+                                    <div class="col-span-12">
+                                        <label for="appointment_date" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Appointment date</label>
+                                        <input type="date" id="appointment_date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                    </div>
+                                    <div class="col-span-12">
+                                        <label for="appointment_time" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Appointment time</label>
+                                        <select id="appointment_time" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                            <option value="" selected>---</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="my-8"></div>
+                    <div class="flex items-center justify-between">
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Back</button>
+                        <button data-custom-target="free-online-appointment-form-stepper" type="button" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Checkout</button>
+                    </div>
+                </li>
             </ul>
         </div>
 
         <!-- <ul class="flex items-center gap-8 my-8">
             <li>
-                <button type="button" class="step-control prev-btn step-backward" data-custom-target="free-online-appointment-form-stepper">Previous</button>
+                <button type="button" class="step-control prev-btn step-backward" data-custom-target="free-online-appointment-form-stepper">Back</button>
             </li>
             <li>
                 <button type="button" class="step-control next-btn step-forward" data-custom-target="free-online-appointment-form-stepper">Next</button>
@@ -299,7 +378,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
         <ul class="flex items-center gap-8 my-8">
             <li>
-                <button type="button" class="step-backward">Previous</button>
+                <button type="button" class="step-backward">Back</button>
             </li>
             <li>
                 <button type="button" class="step-forward">Next</button>
