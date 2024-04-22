@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         productDetailsPreviewImages();
         togglePasswordFieldTypes();
         goBackWithButtonClicked();
-        stepperController();
+        // stepperController();
     }
 
 
