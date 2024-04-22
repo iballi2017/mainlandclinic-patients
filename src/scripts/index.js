@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
             pages.style.width = (pages.children.length * 100) + "%";
             const progressBar = stepper_wrapper.parentElement.querySelector(".progress");
             const stepper = new Stepper(pages, pages.children.length, progressBar);
+            const currentMarginSize = stepper.getCurrentMarginSizeCount();
+            pages.style.marginLeft = `${currentMarginSize}%`;
 
             for (let j = 0; j < controls.length; j++) {
                 const control = controls[j];
