@@ -117,6 +117,10 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                                     <legend class="sr-only">Personal information</legend>
 
                                     <div class="grid grid-cols-12 gap-4">
+                                        <div class="col-span-12">
+                                            <label for="id_number" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mainland clinics ID number</label>
+                                            <input type="text" id="id_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                        </div>
                                         <div class="col-span-12 sm:col-span-4">
                                             <label for="first_name" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                                             <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
