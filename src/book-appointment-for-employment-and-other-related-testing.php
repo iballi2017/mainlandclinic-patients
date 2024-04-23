@@ -42,59 +42,36 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                             </div>
                             <div class="col-span-12 sm:col-span-6">
                                 <label for="phone" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
-                                <input type="text" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
                             </div>
                             <div class="col-span-12 sm:col-span-6">
-                                <label for="dob" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Birth</label>
-                                <input type="date" id="dob" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
+                                <label for="contact_person" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contact Person</label>
+                                <input type="text" id="contact_person" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
                             </div>
                             <div class="col-span-12 sm:col-span-6">
-                                <label for="sex" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
-                                <select id="sex" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                    <option value="male" selected>Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
+                                <label for="organisation_size" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Organisation Size</label>
+                                <select id="organisation_size" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                    <option value="1-10" selected>1-10</option>
+                                    <option value="11-30">11-30</option>
+                                    <option value="31-50">31-50</option>
+                                    <option value="61-100">61-100</option>
                                 </select>
                             </div>
                         </div>
                     </fieldset>
-                    <div class="my-2"></div>
-                    <fieldset>
-                        <legend class="sr-only">Address</legend>
-                        <div class="grid grid-cols-12 gap-4">
-                            <div class="col-span-12">
-                                <label for="address" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
-                                <input type="text" id="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
-                            </div>
-                            <div class="col-span-12 sm:col-span-6">
-                                <label for="city" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Town/City</label>
-                                <input type="text" id="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="state" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
-                                <select id="state" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                    <option value="" selected>....</option>
-                                </select>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="zipcode" class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white">Zip</label>
-                                <input type="text" id="zipcode" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required />
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="my-2"></div>
+                    <div class="my-4"></div>
                     <fieldset>
                         <div class="grid grid-cols-1 gap-4">
                             <div class="col-span-1">
-                                <legend class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Are you the patient?</legend>
+                                <legend class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Partnership option</legend>
                                 <ul class="flex items-center font-semibold gap-8">
                                     <li>
-                                        <input type="radio" name="are_you_the_patient" id="yes" value="yes">
-                                        <label for="yes" class="cursor-pointer">Yes</label>
+                                        <input type="radio" name="partnership-option" id="one-off" value="one-off">
+                                        <label for="one-off" class="cursor-pointer">One-off</label>
                                     </li>
                                     <li>
-                                        <input type="radio" name="are_you_the_patient" id="no" value="no">
-                                        <label for="no" class="cursor-pointer">No</label>
+                                        <input type="radio" name="partnership-option" id="continuos" value="continuos">
+                                        <label for="continuos" class="cursor-pointer">Continuos</label>
                                     </li>
                                 </ul>
                             </div>
@@ -107,8 +84,9 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
         <form action="">
             <div class="flex items-center justify-between">
-                <button data-custom-target="free-online-appointment-form-stepper" type="button" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Back</button>
-                <button data-custom-target="free-online-appointment-form-stepper" type="submit" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Next</button>
+                <button data-custom-target="free-online-appointment-form-stepper" type="submit" class="step-control next-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                    Submit
+                </button>
             </div>
         </form>
     </div>
