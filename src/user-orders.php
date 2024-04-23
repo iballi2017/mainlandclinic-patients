@@ -41,13 +41,13 @@
                             <div class="hidden p-2 sm:p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="order-history" role="tabpanel" aria-labelledby="order-history-tab">
 
 
-                                <!-- user account - personal information -->
+                                <!-- user account - order history -->
                                 <?php include_once(__DIR__ . "./components/user-order-history.php") ?>
 
                             </div>
                             <div class="hidden p-2 sm:p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
 
-                                <!-- user profile - medical history -->
+                                <!-- user profile - wishlist -->
                                 <?php include_once(__DIR__ . "./components/user-wishlist.php") ?>
 
                             </div>

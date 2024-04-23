@@ -1671,6 +1671,10 @@ input:checked + .toggle-bg {
   flex-wrap: wrap;
 }
 
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -1941,6 +1945,11 @@ input:checked + .toggle-bg {
 .border-purple-600 {
   --tw-border-opacity: 1;
   border-color: rgb(126 58 242 / var(--tw-border-opacity));
+}
+
+.border-red-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 128 128 / var(--tw-border-opacity));
 }
 
 .border-red-500 {

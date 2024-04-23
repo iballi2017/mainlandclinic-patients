@@ -1,6 +1,6 @@
 <!-- user-order-list-app works! -->
 
-<div class="flex items-center justify-between gap-2 border-b border-b-accent-650 pb-2">
+<div class="flex items-center justify-between gap-2 border-b border-b-accent-650 pb-4 mb-4">
     <div class="basis-full sm:basis-1/2 text-xs">
         Showing 1-12 of 12 results
     </div>

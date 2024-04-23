@@ -29,7 +29,15 @@
                     <div class="my-2"></div>
 
                     <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        Hello
+                        <!-- user account - appointment booking details -->
+                        <?php include_once(__DIR__ . "./components/user-appointment-booking-details.php") ?>
+                    </div>
+
+                    <div class="p-4 w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+
+                        <!-- user account - appointment booking list -->
+                        <?php include_once(__DIR__ . "./components/user-appointment-booking-list.php") ?>
                     </div>
 
                 </div>
