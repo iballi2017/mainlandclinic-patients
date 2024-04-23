@@ -55,7 +55,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     <div class="body py-2">
                         <p class="text-accent-730 font-semibold">Fee</p>
                         <p class="text-xl font-bold mb-2">N25,000</p>
-                        <a href="#" class="block text-lg font-medium text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-blue-300 rounded-lg w-full px-5 sm:px-8 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Choose</a>
+                        <a href="book-appointment-telemedicine.php" class="block text-lg font-medium text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-blue-300 rounded-lg w-full px-5 sm:px-8 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Choose</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     <div class="body py-2">
                         <p class="text-accent-730 font-semibold">Fee</p>
                         <p class="text-xl font-bold mb-2">No Fee</p>
-                        <a href="#" class="block text-lg font-medium text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-blue-300 rounded-lg w-full px-5 sm:px-8 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Choose</a>
+                        <a href="book-appointment-for-employment-and-other-related-testing.php" class="block text-lg font-medium text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-blue-300 rounded-lg w-full px-5 sm:px-8 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Choose</a>
                     </div>
                 </div>
             </div>
