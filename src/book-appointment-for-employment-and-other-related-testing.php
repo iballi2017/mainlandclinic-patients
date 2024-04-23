@@ -92,3 +92,10 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
     </div>
 
 </div>
+
+
+<div class="my-16"></div>
+<!-- foot -->
+<?php include_once(__DIR__ . "./components/foot.php"); ?>
+<!-- footer -->
+<?php include_once(__DIR__ . "./components/footer.php"); ?>
