@@ -1,5 +1,5 @@
 class Stepper {
-    marginCount = 0;
+    marginSize = 0;
     fullWidth = 100;
     progressBar = null;
     progressPoints = null;
@@ -14,28 +14,27 @@ class Stepper {
         pagesWrapper.parentElement.classList.add("show");
         this.progressBar = progressBar;
         this.progressPoints = this.progressBar.children;
+        this.updateProgress(this.marginSize);
     }
 
 
     stepForward() {
-        if (this.marginCount != -this.maxPages) {
-            this.marginCount -= this.fullWidth
-            this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
-            this.updateProgress(this.marginCount);
-            console.log("this.marginCount: ", this.marginCount)
+        if (this.marginSize != -this.maxPages) {
+            this.marginSize -= this.fullWidth
+            this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginSize + "% " : null;
+            this.updateProgress(this.marginSize);
         }
     }
     stepBackward() {
-        if (this.marginCount < 0) {
-            this.marginCount = this.marginCount + this.fullWidth
-            this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginCount + "% " : null;
-            this.updateProgress(this.marginCount);
+        if (this.marginSize < 0) {
+            this.marginSize = this.marginSize + this.fullWidth
+            this.pagesWrapper ? this.pagesWrapper.style.marginLeft = this.marginSize + "% " : null;
+            this.updateProgress(this.marginSize);
         }
     }
 
-
-    updateProgress(marginCount) {
-        let pagesWidthNotPassed = this.pagesWrapperWidth + marginCount;
+    updateProgress(marginSize) {
+        let pagesWidthNotPassed = this.pagesWrapperWidth + marginSize;
         let numberOfScreensNotPassed = pagesWidthNotPassed / this.fullWidth;
         let currentScreenNumber = (this.pageCount + 1) - numberOfScreensNotPassed;
 
@@ -47,6 +46,10 @@ class Stepper {
             const element = this.progressPoints[i];
             element.classList.add(this.progressClassname)
         }
+    }
+
+    getCurrentMarginSizeCount() {
+        return this.marginSize;
     }
 }
 

@@ -138,7 +138,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
             <h2 class="py-4 px-6 border-b mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Payment Method</h2>
 
             <div class="py-4 px-6">
-                <button>
+                <button aria-label="Pay with Quickteller">
                     <img src="./assets/images/pay-with-quickteller.svg" alt="Pay with Quickteller">
                 </button>
             </div>

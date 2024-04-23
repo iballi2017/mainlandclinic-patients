@@ -502,29 +502,79 @@ footer .navbar-brand {
 .appointment-form-stepper .step.current .progress-point .inner {
   background-color: var(--clr-primary-500);
 }
+.appointment-form-stepper .stepper {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.appointment-form-stepper .stepper + * {
+  display: none;
+}
+.appointment-form-stepper .stepper.show {
+  display: block;
+}
+.appointment-form-stepper .stepper.show + * {
+  display: flex;
+}
+.appointment-form-stepper .stepper .pages {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  transition: margin-left 300ms ease-in-out;
+}
+.appointment-form-stepper .stepper .pages .page {
+  flex-basis: 100%;
+}
 
-.stepper {
+/**/
+.stepper-widget .progress-point {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border: 2px solid var(--clr-accent-730);
+}
+.stepper-widget .progress-point .inner {
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--clr-accent-730);
+  border: 1px solid white;
+}
+.stepper-widget .step.current {
+  color: var(--clr-primary-500);
+  font-weight: 600;
+}
+.stepper-widget .step.current .progress-point {
+  border: 2px solid var(--clr-primary-500);
+}
+.stepper-widget .step.current .progress-point .inner {
+  background-color: var(--clr-primary-500);
+}
+.stepper-widget .stepper {
   display: none;
   overflow-x: hidden;
   position: relative;
   left: 0;
   right: 0;
 }
-.stepper + * {
+.stepper-widget .stepper + * {
   display: none;
 }
-.stepper.show {
+.stepper-widget .stepper.show {
   display: block;
 }
-.stepper.show + * {
+.stepper-widget .stepper.show + * {
   display: flex;
 }
-.stepper .pages {
+.stepper-widget .stepper .pages {
   display: flex;
   margin-left: 0;
   transition: margin-left 300ms ease-in-out;
 }
-.stepper .pages .page {
+.stepper-widget .stepper .pages .page {
   flex-basis: 100%;
 }
 
