@@ -39,6 +39,9 @@
                         <button href="#" class="block text-nowrap text-xs text-red-500 px-6 py-2 rounded border border-red-500 font-semibold">
                             Cancelled
                         </button>
+                        <a href="#" class="rounded py-2 px-3 block text-center text-nowrap text-xs bg-primary-500 hover:bg-primary-600 text-white font-semibold">
+                            Reschedule
+                        </a>
                     </div>
                 </div>
             </div>
