@@ -16,7 +16,7 @@
 </div>
 
 
-<ul class="flex flex-col gap-4">
+<ul class="flex flex-col gap-4 text-sm">
     <li>
         <div class="p-2 border rounded-lg">
             <div class="flex justify-between flex-wrap sm:flex-nowrap text-sm">

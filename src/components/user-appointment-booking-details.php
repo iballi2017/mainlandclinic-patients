@@ -8,7 +8,7 @@
         <h2>Appointment Details</h2>
     </div>
 </div>
-<section class="p-4">
+<section class="p-4 text-sm">
     <!-- Appointment information -->
 
     <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
@@ -30,6 +30,8 @@
                         <h5 class="font-semibold text-lg">Telemedicine</h5>
                         <h6 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">₦2,400.00</h6>
                         <span class="inline-block mb-2 bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-orange-900 dark:text-orange-300">Pending</span>
+                        <span class="inline-block mb-2 bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Completed</span>
+                        <span class="inline-block mb-2 bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-900 dark:text-gray-300">Cancelled</span>
                         <div class="flex items-center gap-4 flex-nowrap mb-3 font-normal text-gray-700 dark:text-gray-400">
                             <span>Date:&nbsp;15-03-2023</span>
                             <span>Time:&nbsp;07:00am</span>
