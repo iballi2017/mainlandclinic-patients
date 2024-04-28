@@ -601,6 +601,43 @@ footer .navbar-brand {
   list-style-type: disc;
 }
 
+.chat-screen .streams .event[data-type=host] {
+  text-align: right;
+}
+.chat-screen .streams .event[data-type=host] .body {
+  text-align: left;
+}
+.chat-screen .streams .event[data-type=client] .content .inner {
+  background-color: var(--clr-accent-600);
+}
+@media (min-width: 50em) {
+  .chat-screen .streams .event[data-type=client] .content {
+    margin-left: 50px;
+  }
+}
+.chat-screen .streams .event .content .inner {
+  background-color: var(--clr-accent-400);
+}
+@media (min-width: 50em) {
+  .chat-screen .streams .event .content {
+    display: flex;
+    gap: 10px;
+  }
+  .chat-screen .streams .event .content::before {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    background-image: url(../assets/icons/account_circle_black.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -60px;
+  }
+}
+
 :root {
   /* COLORS */
   --clr-primary-50: hsla(86, 81%, 75%, 1);
