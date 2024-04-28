@@ -1,5 +1,56 @@
 @use "../_partials/mixins";
 
+
+/* font sizes */
+.fs-50 {
+  font-size: var(--fs-50);
+}
+.fs-100 {
+  font-size: var(--fs-100);
+}
+.fs-150 {
+  font-size: var(--fs-150);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+
+
+/* Padding */
+
+.padding-block-400 {
+  @include mixins.padding-block(var(--size-400));
+}
+
+.padding-block-500 {
+  @include mixins.padding-block(var(--size-500));
+}
+
+.padding-block-600 {
+  @include mixins.padding-block(var(--size-600));
+}
+
+.padding-block-700 {
+  @include mixins.padding-block(calc(var(--size-600) + var(--size-400)));
+}
+
+.padding-block-800 {
+  @include mixins.padding-block(calc(var(--size-600) + var(--size-400) + var(--size-400)));
+}
+
 .pill {
   border-radius: 100vmax;
 }
@@ -106,5 +157,34 @@
         stroke: var(--clr-primary-500);
       }
     }
+  }
+}
+
+.remove-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.primary-scrollbar {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--clr-primary-500);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
   }
 }

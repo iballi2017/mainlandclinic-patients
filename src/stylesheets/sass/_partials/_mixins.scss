@@ -66,3 +66,9 @@
     font-weight: 900;
     font-size: $fontSize;
 }
+
+
+/* padding-block size */
+@mixin padding-block($size) {
+    padding-block: $size;
+}

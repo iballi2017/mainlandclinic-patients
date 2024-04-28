@@ -67,3 +67,20 @@
 .fs-400 {
   font-size: var(--fs-400);
 }
+
+.fs-section-headline {
+  font-size: var(--fs-section-headline);
+  line-height: 1.2;
+}
+.fs-section-title {
+  font-size: var(--fs-section-title);
+}
+
+/* Line Heights */
+
+.line-height-300 {
+  line-height: var(--fs-300);
+}
+.line-height-400 {
+  line-height: var(--fs-400);
+}

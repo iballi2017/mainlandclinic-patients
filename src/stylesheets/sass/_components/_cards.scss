@@ -1,7 +1,9 @@
-.product-listing-card{
-  .title{
+@use "../_partials/mixins";
+
+.product-listing-card {
+  .title {
     height: 40px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 20px;
     overflow: hidden;
     // background-color: red;
@@ -50,6 +52,48 @@
     }
     .card-footer {
       display: none;
+    }
+  }
+}
+
+.feature-card {
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+  img {
+    transform: scale(1);
+    position: relative;
+    z-index: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  .title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: var(--size-400);
+    span {
+      font-weight: var(--fw-semi-bold);
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      color: var(--clr-neutral-500);
+      font-size: var(--fs-50);
+      line-height: var(--size-500);
+      padding: var(--size-200) var(--size-200);
+      border-radius: var(--size-200);
+    }
+  }
+  @include mixins.minmq(50em) {
+    .title {
+      span {
+        line-height: var(--size-500);
+        padding: var(--size-200) var(--size-300);
+        border-radius: var(--size-200);
+      }
     }
   }
 }

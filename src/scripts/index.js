@@ -16,6 +16,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
+
+    /* Page Content Intersection Observer */
+    const faders = document.querySelectorAll(".fade-in");
+    const sliders = document.querySelectorAll(".slide-in");
+
+    const appearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -100px 0px",
+    };
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+    });
+
+    sliders.forEach((slider) => {
+        appearOnScroll.observe(slider);
+    });
+
+
+
+
     /**Toggle password field types */
     const togglePasswordFieldTypes = () => {
         const formControls = new FormControls();
@@ -86,14 +114,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     /**For Checkboxes */
                     if (control.tagName === TAGNAME.INPUT && control.classList.contains("next-btn")) {
                         control.addEventListener("change", (e) => {
-                            if(e.target.checked){
+                            if (e.target.checked) {
                                 stepper.stepForward()
                             }
                         })
                     }
                     if (control.tagName === TAGNAME.INPUT && control.classList.contains("prev-btn")) {
                         control.addEventListener("change", () => {
-                            if(e.target.checked){
+                            if (e.target.checked) {
                                 stepper.stepBackward()
                             }
                         })
