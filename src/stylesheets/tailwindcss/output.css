@@ -1156,12 +1156,16 @@ input:checked + .toggle-bg {
   left: 0px;
 }
 
-.left-8 {
-  left: 2rem;
+.left-2 {
+  left: 0.5rem;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.right-2 {
+  right: 0.5rem;
 }
 
 .right-24 {
@@ -1170,10 +1174,6 @@ input:checked + .toggle-bg {
 
 .right-4 {
   right: 1rem;
-}
-
-.right-8 {
-  right: 2rem;
 }
 
 .start-6 {
@@ -1190,14 +1190,6 @@ input:checked + .toggle-bg {
 
 .top-8 {
   top: 2rem;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
-.left-2 {
-  left: 0.5rem;
 }
 
 .z-0 {
@@ -2180,11 +2172,6 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-primary-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(198 243 140 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2423,6 +2410,11 @@ input:checked + .toggle-bg {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -2665,12 +2657,6 @@ input:checked + .toggle-bg {
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -3450,12 +3436,12 @@ input:checked + .toggle-bg {
     inset: auto;
   }
 
-  .sm\:right-8 {
-    right: 2rem;
-  }
-
   .sm\:left-8 {
     left: 2rem;
+  }
+
+  .sm\:right-8 {
+    right: 2rem;
   }
 
   .sm\:z-0 {
@@ -3579,12 +3565,12 @@ input:checked + .toggle-bg {
     justify-content: center;
   }
 
-  .sm\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:rounded-lg {
@@ -3661,14 +3647,14 @@ input:checked + .toggle-bg {
     line-height: 1.5rem;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:leading-7 {
@@ -3782,6 +3768,11 @@ input:checked + .toggle-bg {
 
   .md\:pr-0 {
     padding-right: 0px;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
