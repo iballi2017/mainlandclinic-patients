@@ -10,6 +10,8 @@
 $routes = array("Home", "Book appointment", "Free - Book online appointment");
 include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
+<label for="datepicker">Select a Date:</label>
+<input type="text" class="datepicker" />
 <div class="my-4"></div>
 
 <div class="appointment-form-stepper | mx-auto max-w-4xl px-2 sm:px-6 lg:px-8">
@@ -271,7 +273,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                             <div class="my-10"></div>
 
-                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="bg-white rounded-lg overflow-hidden border dark:bg-gray-800 dark:border-gray-700">
                                 <div class="bg-secondary-500 p-4">
                                     <div class="max-w-24">
                                         <img class="rounded-t-lg" src="./assets/images/brand-logo-inverse.svg" alt="img" />
