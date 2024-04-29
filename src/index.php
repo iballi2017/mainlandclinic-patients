@@ -106,7 +106,7 @@
             <div class="col-span-12 md:col-span-7">
                 <div class="fade-in">
                     <h2 class="fs-section-title animate__animated animate__fadeIn">About us</h2>
-                    <h3 class="font-bold text-xl" style="max-width: 500px;">
+                    <h3 class="font-bold fs-section-headline mb-2" style="max-width: 500px;">
                         Take Control of Your
                         Health Today
                     </h3>
@@ -134,7 +134,7 @@
             <div class="item">
                 <div class="title">
                     <h2 class="fs-section-title fade-in">Our services</h2>
-                    <h3 class="text-lg font-bold fade-in">Invest in Your Well -Being.</h3>
+                    <h3 class="md:text-5xl font-bold fade-in">Invest in Your Well -Being.</h3>
                 </div>
             </div>
             <div class="item">
