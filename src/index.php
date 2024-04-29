@@ -138,54 +138,44 @@
                 </div>
             </div>
             <div class="item">
-                <a href="./views/clinical-services.php">
-                    <div class="feature-card">
-                        <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service" class="w-full">
-                        <div class="title">
-                            <span>Clinical Service</span>
-                        </div>
+                <div class="feature-card">
+                    <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service" class="w-full">
+                    <div class="title">
+                        <span>Clinical Service</span>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="item">
-                <a href="./views/food-handlers-test.php">
-                    <div class="feature-card">
-                        <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service" class="w-full">
-                        <div class="title">
-                            <span>Food Handlers Test</span>
-                        </div>
+                <div class="feature-card">
+                    <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service" class="w-full">
+                    <div class="title">
+                        <span>Food Handlers Test</span>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="item">
-                <a href="./views/pre-employment-test.php">
-                    <div class="feature-card">
-                        <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service" class="w-full">
-                        <div class="title">
-                            <span>Pre-employment Test</span>
-                        </div>
+                <div class="feature-card">
+                    <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service" class="w-full">
+                    <div class="title">
+                        <span>Pre-employment Test</span>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="item">
-                <a href="./views/fitness-wellness-test.php">
-                    <div class="feature-card">
-                        <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service" class="w-full">
-                        <div class="title">
-                            <span>Fitness/Wellness Test</span>
-                        </div>
+                <div class="feature-card">
+                    <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service" class="w-full">
+                    <div class="title">
+                        <span>Fitness/Wellness Test</span>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="item">
-                <a href="./views/telemedicine.php">
-                    <div class="feature-card">
-                        <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service" class="w-full">
-                        <div class="title">
-                            <span>Telemedicine</span>
-                        </div>
+                <div class="feature-card">
+                    <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service" class="w-full">
+                    <div class="title">
+                        <span>Telemedicine</span>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="item">
                 <div class="card border-0 h-100">
