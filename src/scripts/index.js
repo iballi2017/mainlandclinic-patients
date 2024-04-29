@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // stepperController();
     }
 
+    /**remove page loader */
+    const page_loader = document.querySelector(".page-loader");
+    page_loader?.classList.contains("show") ?
+        page_loader.classList.remove("show") :
+        null;
 
 
     /* Page Content Intersection Observer */
