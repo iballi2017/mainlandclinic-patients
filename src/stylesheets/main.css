@@ -961,6 +961,10 @@ button[aria-label="remove item table item"] {
   background-repeat: no-repeat;
 }
 
+.ui-datepicker .ui-datepicker-header {
+  background: var(--clr-primary-50);
+}
+
 :root {
   /* COLORS */
   --clr-primary-50: hsla(86, 81%, 75%, 1);
