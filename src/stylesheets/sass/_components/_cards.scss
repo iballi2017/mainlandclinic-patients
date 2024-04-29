@@ -97,3 +97,22 @@
     }
   }
 }
+
+.review-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  line-height: 20px;
+  .review-footer {
+    position: relative;
+    .foot-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 100vmax;
+      overflow: hidden;
+      position: absolute;
+      right: 30px;
+      top: -30px;
+    }
+  }
+}
