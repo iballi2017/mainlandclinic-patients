@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <a href="user-appointment-chat-messenger.php?appointmentId=123" class="block text-nowrap text-xs text-green-400 font-semibold">See details</a>
+                    <a href="user-appointment-details.php?appointmentId=123" class="block text-nowrap text-xs text-green-400 font-semibold">See details</a>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <a href="user-appointment-chat-messenger.php?appointmentId=123" class="block text-nowrap text-xs text-green-400 font-semibold">See details</a>
+                    <a href="user-appointment-details.php?appointmentId=123" class="block text-nowrap text-xs text-green-400 font-semibold">See details</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <a href="user-appointment-chat-messenger.php?appointmentId=123" class="block text-nowrap text-xs text-green-400 font-semibold">See details</a>
+                    <a href="user-appointment-details.php?appointmentId=123" class="block text-nowrap text-xs text-green-400 font-semibold">See details</a>
                 </div>
             </div>
         </div>

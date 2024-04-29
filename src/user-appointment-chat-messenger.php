@@ -38,7 +38,7 @@
                                 <h2>Appointment Details</h2>
                             </div>
                         </div>
-                        <section class="p-4 text-sm">
+                        <section class="p-2 sm:p-4 text-sm">
 
                             <!-- user-appointment-toolbar -->
                             <?php include_once(__DIR__ . "./components/user-appointment-toolbar.php"); ?>
@@ -205,13 +205,18 @@
 
 
                                 <div class="px-2 py-4 sm:x-4 sm:py-8 bg-white border-t border-gray-200 rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
-                                    <div class="relative">
-                                        <form action="">
-                                            <button type="submit" class="absolute inset-y-0 end-0 flex items-center pe-3.5">
-                                                <img src="./assets/icons/paper-plane-blue.svg" alt="">
-                                            </button>
-                                            <input type="text" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pe-10 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-primary-500" required>
-                                        </form>
+                                    <div class="flex items-center gap-2">
+                                        <button title="Refresh messages" aria-label="refresh messages" class="bg-gray-50 border border-gray-300 text-gray-900 rounded sm:rounded-lg focus:ring-secondary-500 focus:border-secondary-500 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-secondary-500">
+                                            <i class="fas fa-redo text-secondary-500"></i>
+                                        </button>
+                                        <div class="w-full relative">
+                                            <form action="">
+                                                <button type="submit" class="absolute inset-y-0 end-0 flex items-center pe-3.5">
+                                                    <img src="./assets/icons/paper-plane-blue.svg" alt="">
+                                                </button>
+                                                <input type="text" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 rounded sm:rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pe-10 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-primary-500" required>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
 
