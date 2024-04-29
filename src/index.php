@@ -96,7 +96,7 @@
 
 <!-- About us -->
 <section class="padding-block-800">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-12 md:gap-8">
             <div class="col-span-12 md:col-span-5">
                 <div class="rounded-md bg-blue-300 overflow-hidden mb-3 fade-in">
