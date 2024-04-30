@@ -2412,11 +2412,6 @@ input:checked + .toggle-bg {
   line-height: 1rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2995,6 +2990,11 @@ input:checked + .toggle-bg {
   border-color: rgb(240 82 82 / var(--tw-border-opacity));
 }
 
+.focus\:border-secondary-500:focus {
+  --tw-border-opacity: 1;
+  border-color: hsl(114 28% 14% / var(--tw-border-opacity));
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -3071,6 +3071,11 @@ input:checked + .toggle-bg {
 .focus\:ring-red-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(240 82 82 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-secondary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(114 28% 14% / var(--tw-ring-opacity));
 }
 
 .peer:checked ~ .peer-checked\:bg-primary-400 {
@@ -3372,6 +3377,11 @@ input:checked + .toggle-bg {
 .dark\:focus\:border-primary-500:focus:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: hsl(108 93% 29% / var(--tw-border-opacity));
+}
+
+.dark\:focus\:border-secondary-500:focus:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: hsl(114 28% 14% / var(--tw-border-opacity));
 }
 
 .dark\:focus\:ring-blue-500:focus:is(.dark *) {
