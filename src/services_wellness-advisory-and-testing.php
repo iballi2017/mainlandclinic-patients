@@ -34,7 +34,7 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                 <div class="my-8"></div>
 
-                <ul class="bg-blue-300">
+                <ul class="bg-blue-300 flex flex-col gap-8">
                     <li class="bg-red-300 flex items-stretch">
                         <div class="w-[100px] min-w-[100px] flex items-center justify-center bg-green-200">
                             <i class="sm:text-5xl fas fa-wifi"></i>
