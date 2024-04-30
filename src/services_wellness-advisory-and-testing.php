@@ -29,10 +29,42 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
         <div class="grid grid-cols-12">
             <div class="col-span-12 sm:col-span-6">
-                <h3 class="text-lg font-bold text-[#17A110]">Free Clinic Testing:</h3>
-                <p class="font-bold text-lg">Essential screenings and consultations, no financial barriers. Here's what you need to know:</p>
+                <h3 class="text-base sm:text-lg font-bold text-[#17A110]">Free Clinic Testing:</h3>
+                <p class="font-bold text-lg sm:text-xl">Essential screenings and consultations, no financial barriers. Here's what you need to know:</p>
+
+                <div class="my-8"></div>
+
+                <ul class="bg-blue-300">
+                    <li class="bg-red-300 flex items-stretch">
+                        <div class="min-w-[200px] bg-green-200">
+                            <i class="text-4xl fas fa-wifi"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Book Online Appointment:</h4>
+                            <p>For efficient service and safety, please book your Free Clinic Testing appointment online in advance. Visit our website to select your preferred time slot.</p>
+                        </div>
+
+                    </li>
+                    <li class="bg-yellow-300 flex items-stretch">
+                        <div class="min-w-[200px] bg-green-200">
+                            <i class="text-4xl fas fa-star-of-life"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Fridays Only at Clinic:</h4>
+                            <p>Join us exclusively on Fridays at our clinic for Free Clinic Testing sessions. Whether it's routine check-ups or specific screenings, our dedicated team is here to assist you.</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <dl>
+                    <dt class="text-lg font-semibold">Book Online Appointment:</dt>
+                    <dd>For efficient service and safety, please book your Free Clinic Testing appointment online in advance. Visit our website to select your preferred time slot.</dd>
+                    <div class="my-4"></div>
+                    <dt class="text-lg font-semibold">Fridays Only at Clinic:</dt>
+                    <dd>oin us exclusively on Fridays at our clinic for Free Clinic Testing sessions. Whether it's routine check-ups or specific screenings, our dedicated team is here to assist you.</dd>
+                </dl> -->
             </div>
             <div class="col-span-12 sm:col-span-6"></div>
+
         </div>
     </section>
 </div>
