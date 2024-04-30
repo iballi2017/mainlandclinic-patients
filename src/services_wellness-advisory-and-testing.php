@@ -36,8 +36,8 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                 <ul class="bg-blue-300">
                     <li class="bg-red-300 flex items-stretch">
-                        <div class="min-w-[200px] bg-green-200">
-                            <i class="text-4xl fas fa-wifi"></i>
+                        <div class="w-[100px] min-w-[100px] flex items-center justify-center bg-green-200">
+                            <i class="sm:text-5xl fas fa-wifi"></i>
                         </div>
                         <div>
                             <h4 class="text-lg font-semibold">Book Online Appointment:</h4>
@@ -46,8 +46,8 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
                     </li>
                     <li class="bg-yellow-300 flex items-stretch">
-                        <div class="min-w-[200px] bg-green-200">
-                            <i class="text-4xl fas fa-star-of-life"></i>
+                        <div class="w-[100px] min-w-[100px] flex items-center justify-center bg-green-200">
+                            <i class="sm:text-5xl fas fa-star-of-life"></i>
                         </div>
                         <div>
                             <h4 class="text-lg font-semibold">Fridays Only at Clinic:</h4>
