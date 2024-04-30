@@ -43,7 +43,7 @@
                 <div class="hidden md:ml-6 md:block">
                     <div class="flex items-center space-x-8 navlist">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About us</a>
+                        <a href="about-us.php" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium" aria-current="page">About us</a>
 
                         <!-- Services -->
                         <button id="dropdownServicesButton" data-dropdown-toggle="dropdownServices" data-dropdown-delay="500" data-dropdown-trigger="hover" class="font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">
@@ -58,7 +58,7 @@
                                     <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Clinical services</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Fitness/Wellness test</a>
+                                    <a href="services_wellness-advisory-and-testing.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Fitness/Wellness test</a>
                                 </li>
                                 <li>
                                     <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Telemedicine</a>
