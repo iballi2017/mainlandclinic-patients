@@ -1029,6 +1029,10 @@ button[aria-label="remove item table item"] {
   --clr-secondary-500: hsl(114, 28%, 14%);
   --clr-alt-100: hsl(277, 93%, 29%);
   --clr-alt-200: hsl(223, 70%, 63%);
+  --clr-alt-300: #1D9BF0;
+  --clr-alt-400: #FF9AAD;
+  --clr-alt-500: #F5FFF4;
+  --clr-alt-600: #F2CB56;
   --base-text-color-100: var(--clr-accent-700);
   --base-text-color-200: var(--clr-accent-600);
   --base-text-color-500: var(--clr-primary-700);
