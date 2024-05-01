@@ -1587,6 +1587,10 @@ input:checked + .toggle-bg {
   min-width: 16rem;
 }
 
+.min-w-\[100px\] {
+  min-width: 100px;
+}
+
 .max-w-24 {
   max-width: 6rem;
 }
@@ -1601,10 +1605,6 @@ input:checked + .toggle-bg {
 
 .max-w-56 {
   max-width: 14rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
 }
 
 .max-w-7xl {
@@ -1795,6 +1795,10 @@ input:checked + .toggle-bg {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-2 {
@@ -2084,6 +2088,11 @@ input:checked + .toggle-bg {
 .bg-accent-600 {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 85% / var(--tw-bg-opacity));
+}
+
+.bg-alt-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 255 244 / var(--tw-bg-opacity));
 }
 
 .bg-blue-300 {
@@ -2499,6 +2508,11 @@ input:checked + .toggle-bg {
   letter-spacing: -0.025em;
 }
 
+.text-\[\#17A110\] {
+  --tw-text-opacity: 1;
+  color: rgb(23 161 16 / var(--tw-text-opacity));
+}
+
 .text-\[hsl\(195\2c 86\%\2c 64\%\)\] {
   --tw-text-opacity: 1;
   color: hsl(195 86% 64% / var(--tw-text-opacity));
@@ -2542,6 +2556,16 @@ input:checked + .toggle-bg {
 .text-alt-300 {
   --tw-text-opacity: 1;
   color: rgb(29 155 240 / var(--tw-text-opacity));
+}
+
+.text-alt-400 {
+  --tw-text-opacity: 1;
+  color: rgb(255 154 173 / var(--tw-text-opacity));
+}
+
+.text-alt-600 {
+  --tw-text-opacity: 1;
+  color: rgb(242 203 86 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -3532,6 +3556,14 @@ input:checked + .toggle-bg {
     z-index: 0;
   }
 
+  .sm\:order-first {
+    order: -9999;
+  }
+
+  .sm\:order-last {
+    order: 9999;
+  }
+
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3562,6 +3594,11 @@ input:checked + .toggle-bg {
 
   .sm\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .sm\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .sm\:mb-4 {
@@ -3667,6 +3704,10 @@ input:checked + .toggle-bg {
 
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
   .sm\:rounded-lg {
@@ -3867,13 +3908,27 @@ input:checked + .toggle-bg {
     padding: 2rem;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:pr-0 {
     padding-right: 0px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:leading-7 {
+    line-height: 1.75rem;
   }
 }
 
