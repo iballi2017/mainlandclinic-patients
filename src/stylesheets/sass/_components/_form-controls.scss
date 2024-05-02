@@ -36,7 +36,7 @@ button {
   }
 }
 
-button[role="tab"] {
+button[role="tab"]:not(.employment-service-category-tabs button) {
   &:hover {
     color: var(--clr-primary-500) !important;
   }
@@ -45,6 +45,23 @@ button[role="tab"] {
     border-bottom: 2px solid var(--clr-primary-500);
   }
 }
+
+.employment-service-category-tabs button[role="tab"]{
+  border-radius: 0;
+  background-color: #F2F2F2;
+  color: inherit;
+  &:hover {
+    background-color: rgba(119,194,75,.35);
+    border-bottom: 2px solid rgba(119,194,75,.35);
+    color: #17A110 !important;
+  }
+  &[aria-selected="true"] {
+    color: var(--clr-primary-500);
+    border-bottom: 2px solid rgba(119,194,75,.35);
+    background-color: rgba(119,194,75,.35);
+  }
+}
+
 
 .custom-checkbox {
   input[type="radio"] {

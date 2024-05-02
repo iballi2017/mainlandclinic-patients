@@ -247,12 +247,28 @@ button[aria-expanded=true] .hide {
   display: block;
 }
 
-button[role=tab]:hover {
+button[role=tab]:not(.employment-service-category-tabs button):hover {
   color: var(--clr-primary-500) !important;
 }
-button[role=tab][aria-selected=true] {
+button[role=tab]:not(.employment-service-category-tabs button)[aria-selected=true] {
   color: var(--clr-primary-500);
   border-bottom: 2px solid var(--clr-primary-500);
+}
+
+.employment-service-category-tabs button[role=tab] {
+  border-radius: 0;
+  background-color: #F2F2F2;
+  color: inherit;
+}
+.employment-service-category-tabs button[role=tab]:hover {
+  background-color: rgba(119, 194, 75, 0.35);
+  border-bottom: 2px solid rgba(119, 194, 75, 0.35);
+  color: #17A110 !important;
+}
+.employment-service-category-tabs button[role=tab][aria-selected=true] {
+  color: var(--clr-primary-500);
+  border-bottom: 2px solid rgba(119, 194, 75, 0.35);
+  background-color: rgba(119, 194, 75, 0.35);
 }
 
 .custom-checkbox input[type=radio] {
@@ -971,7 +987,7 @@ button[aria-label="remove item table item"] {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--clr-accent-500);
+  background-color: rgba(237, 241, 248, 0.4);
   z-index: 99999;
   flex-direction: column;
   align-items: center;
@@ -1020,7 +1036,7 @@ button[aria-label="remove item table item"] {
   --clr-accent-50: #c3c3c3;
   --clr-accent-300: hsl(214, 37%, 96%);
   --clr-accent-400: hsl(0, 0%, 95%);
-  --clr-accent-500: hsl(216, 42%, 95%);
+  --clr-accent-500: hwb(218 93% 3%);
   --clr-accent-600: hsl(0, 0%, 85%);
   --clr-accent-700: #c4c4c4;
   --clr-accent-730: #ababab;
@@ -1031,8 +1047,10 @@ button[aria-label="remove item table item"] {
   --clr-alt-200: hsl(223, 70%, 63%);
   --clr-alt-300: #1D9BF0;
   --clr-alt-400: #FF9AAD;
+  --clr-alt-450: #FFF0F1;
   --clr-alt-500: #F5FFF4;
   --clr-alt-600: #F2CB56;
+  --clr-alt-700: #EBF1C5;
   --base-text-color-100: var(--clr-accent-700);
   --base-text-color-200: var(--clr-accent-600);
   --base-text-color-500: var(--clr-primary-700);
@@ -1197,14 +1215,20 @@ input:focus {
 
 /* Error state */
 input.error {
-  border-bottom: 2px solid #FA5252; /* Error border color */
+  border-bottom: 2px solid #fa5252; /* Error border color */
 }
 
-[type=checkbox]:focus, [type=checkbox]:checked, [type=radio]:focus, [type=radio]:checked {
+[type=checkbox]:focus, [type=checkbox]:checked,
+[type=radio]:focus,
+[type=radio]:checked {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-color: var(--clr-primary-500);
   color: var(--clr-primary-500);
+}
+
+.employment-service-category-tabs .data-tabs-active-classes {
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
