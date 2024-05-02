@@ -4,7 +4,6 @@
 @use "./_abstract";
 @use "./_pages";
 
-
 /* Default state */
 input {
   border-bottom: 1px solid #b0bec5; /* Default border color */
@@ -17,16 +16,24 @@ input:focus {
 
 /* Error state */
 input.error {
-  border-bottom: 2px solid #FA5252; /* Error border color */
+  border-bottom: 2px solid #fa5252; /* Error border color */
 }
 
-
-[type='checkbox'], [type='radio']{
-  &:focus, &:checked {
+[type="checkbox"],
+[type="radio"] {
+  &:focus,
+  &:checked {
     outline: 2px solid transparent;
     outline-offset: 2px;
     --tw-ring-color: var(--clr-primary-500);
     color: var(--clr-primary-500);
   }
-  
+}
+
+.employment-service-category-tabs {
+  .data-tabs-active-classes {
+    background-color: red;
+  }
+  .the data-tabs-inactive-classes {
+  }
 }

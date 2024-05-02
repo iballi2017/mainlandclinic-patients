@@ -64,10 +64,13 @@
                                     <a href="services_telemedicine.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Telemedicine</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Pre-employment test</a>
+                                    <a href="services_employment-and-other-related-testing.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Pre-employment test</a>
                                 </li>
                                 <li>
                                     <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Food Handlers test</a>
+                                </li>
+                                <li>
+                                    <a href="services_ambulance.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Ambulance</a>
                                 </li>
                             </ul>
                         </div>
