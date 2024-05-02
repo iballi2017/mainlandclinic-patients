@@ -61,7 +61,7 @@
                                     <a href="services_wellness-advisory-and-testing.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Fitness/Wellness test</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Telemedicine</a>
+                                    <a href="services_telemedicine.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Telemedicine</a>
                                 </li>
                                 <li>
                                     <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Pre-employment test</a>

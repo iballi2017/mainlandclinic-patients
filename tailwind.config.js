@@ -41,6 +41,7 @@ module.exports = {
         '400': '#FF9AAD', //#FF9AAD;
         '500': '#F5FFF4', //#F5FFF4;
         '600': '#F2CB56', //#F2CB56;
+        '700': '#EBF1C5', //#EBF1C5;
         
       }
 
