@@ -1330,6 +1330,10 @@ input:checked + .toggle-bg {
   margin-bottom: 2rem;
 }
 
+.me-1 {
+  margin-inline-end: 0.25rem;
+}
+
 .me-2 {
   margin-inline-end: 0.5rem;
 }
@@ -1372,10 +1376,6 @@ input:checked + .toggle-bg {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.me-1 {
-  margin-inline-end: 0.25rem;
 }
 
 .block {
@@ -1442,6 +1442,10 @@ input:checked + .toggle-bg {
   height: 0.75rem;
 }
 
+.h-3\.5 {
+  height: 0.875rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -1488,6 +1492,14 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .max-h-full {
@@ -1553,6 +1565,10 @@ input:checked + .toggle-bg {
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-3\.5 {
+  width: 0.875rem;
 }
 
 .w-4 {
@@ -1817,8 +1833,8 @@ input:checked + .toggle-bg {
   gap: 2rem;
 }
 
-.gap-\[2px\] {
-  gap: 2px;
+.gap-16 {
+  gap: 4rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2088,15 +2104,6 @@ input:checked + .toggle-bg {
   background-color: rgb(218 241 197 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F2F2F2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-\[rgba\(119\2c 194\2c 75\2c \.35\)\] {
-  background-color: rgba(119,194,75,.35);
-}
-
 .bg-accent-400 {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 95% / var(--tw-bg-opacity));
@@ -2257,6 +2264,10 @@ input:checked + .toggle-bg {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-6 {
@@ -3562,6 +3573,11 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(28 100 242 / var(--tw-ring-opacity));
 }
 
+.dark\:focus\:ring-blue-800:focus:is(.dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 66 159 / var(--tw-ring-opacity));
+}
+
 .dark\:focus\:ring-gray-600:focus:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
@@ -4071,6 +4087,10 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1280px) {
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
   .xl\:after\:mx-10::after {
     content: var(--tw-content);
     margin-left: 2.5rem;

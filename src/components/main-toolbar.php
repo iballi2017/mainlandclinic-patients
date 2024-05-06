@@ -52,25 +52,32 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
-                        <div id="dropdownServices" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <div id="dropdownServices" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-auto dark:bg-gray-700">
                             <ul class="py-2 -left-8 -right-8 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownServicesButton">
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Clinical services</a>
+                                    <a href="services_wellness-advisory-and-testing.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Wellness Advisory and Testing
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="services_wellness-advisory-and-testing.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Fitness/Wellness test</a>
+                                    <a href="services_telemedicine.php" target="_blank" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Telemedicine
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="services_telemedicine.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Telemedicine</a>
+                                    <a href="services_telemedicine.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Home Care (Live in) Nursing
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="services_employment-and-other-related-testing.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Pre-employment test</a>
+                                    <a href="services_employment-and-other-related-testing.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Employment and other related testing
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Food Handlers test</a>
-                                </li>
-                                <li>
-                                    <a href="services_ambulance.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">Ambulance</a>
+                                    <a href="services_ambulance.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Ambulance services
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -82,32 +89,32 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
-                        <div id="dropdownOthers" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <div id="dropdownOthers" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-auto dark:bg-gray-700">
                             <ul class="py-2 -left-8 -right-8 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownOthersButton">
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="#" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Manage clinics
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="#" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Support & giving
                                     </a>
                                 </li>
                                 <li>
 
-                                    <a href="#" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="#" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Partnership
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="career.php" class="block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="career.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Career
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Health news & updates</a>
+                        <a href="health-news-and-updates.php" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Health news & updates</a>
                         <!-- <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Contact Us</a> -->
                         <!-- <a href="#" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Career</a> -->
                         <a href="shop.php" class="block py-8 text-secondary-500 hover:bg-gray-50 px-3 text-sm font-medium">Shop</a>
