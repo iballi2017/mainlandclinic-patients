@@ -92,7 +92,7 @@
                         <div id="dropdownOthers" class="z-10 hidden min-w-64 px-4 bg-white divide-y divide-gray-100 rounded-lg shadow w-auto dark:bg-gray-700">
                             <ul class="py-2 -left-8 -right-8 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownOthersButton">
                                 <li>
-                                    <a href="#" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="services_manage-clinics.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Manage clinics
                                     </a>
                                 </li>

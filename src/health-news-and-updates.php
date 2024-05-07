@@ -43,11 +43,11 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
         <ul class="grid grid-cols-12 gap-2 sm:gap-4 xl:gap-8">
             <li class="col-span-12 sm:col-span-6">
                 <div class="blogpost-card | bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="" class="block h-60 overflow-hidden">
+                    <a href="health-news-details.php?id=123" class="block h-60 overflow-hidden">
                         <img class="rounded-t-lg" src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-full" />
                     </a>
                     <div class="p-5">
-                        <a href="#">
+                        <a href="health-news-details.php?id=123">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 Why health is wealth
                             </h5>
@@ -65,11 +65,11 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
             </li>
             <li class="col-span-12 sm:col-span-6">
                 <div class="blogpost-card | bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="" class="block h-60 overflow-hidden">
+                    <a href="health-news-details.php?id=456" class="block h-60 overflow-hidden">
                         <img class="rounded-t-lg" src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full" />
                     </a>
                     <div class="p-5">
-                        <a href="#">
+                        <a href="health-news-details.php#?id=456">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 Why health is wealth
                             </h5>
