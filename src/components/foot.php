@@ -44,7 +44,7 @@
                 </ul>
 
             </div>
-            <div class="col-span-12 sm:col-span-3">
+            <!-- <div class="col-span-12 sm:col-span-3">
                 <h6 class="text-lg font-semibold sm:mb-4">Newsletter</h6>
                 <p>Subscribe to our newsletters to get our latest health updates, promos and discounts.
                 </p>
@@ -58,6 +58,33 @@
                         <input type="text" id="input-group-1" class=" bg-accent-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pe-10 p-2.5 py-3  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-primary-500">
                     </div>
                 </form>
+            </div> -->
+
+
+            <div class="col-span-12 sm:col-span-3">
+                <h6 class="text-lg font-semibold sm:mb-4">Health News and Updates</h6>
+                <div class="my-2"></div>
+                <ul class="flex flex-col gap-2">
+                    <li>
+                        <a href="#" class="flex flex-col gap-2 items-center rounded-lg shadow md:flex-row">
+                            <img class="object-cover rounded md:rounded-lg w-16" src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <div class="flex flex-col justify-between">
+                                <h5 class="text-sm font-bold">Noteworthy technology acquisitions 2021</h5>
+                                <p class="font-normal text-xs">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-col gap-2 items-center rounded-lg shadow md:flex-row">
+                            <img class="object-cover rounded md:rounded-lg w-16" src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            <div class="flex flex-col justify-between">
+                                <h5 class="text-sm font-bold">Noteworthy technology acquisitions 2021</h5>
+                                <p class="font-normal text-xs">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>
