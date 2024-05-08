@@ -103,7 +103,7 @@
                                 </li>
                                 <li>
 
-                                    <a href="#" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="partnership.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Partnership
                                     </a>
                                 </li>

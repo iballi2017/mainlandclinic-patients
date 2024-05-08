@@ -1064,6 +1064,10 @@ button[aria-label="remove item table item"] {
     transform: rotate(0.5turn);
   }
 }
+button[role=tab]:not(.employment-service-category-tabs button)[aria-selected=true] svg path {
+  fill: #17A110;
+}
+
 :root {
   /* COLORS */
   --clr-primary-50: hsla(86, 81%, 75%, 1);

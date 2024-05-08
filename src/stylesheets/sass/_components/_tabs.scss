@@ -1,0 +1,10 @@
+button[role="tab"]:not(
+    .employment-service-category-tabs button
+  )[aria-selected="true"] {
+  //   background-color: red;
+  svg {
+    path {
+      fill: #17A110;
+    }
+  }
+}

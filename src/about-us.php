@@ -7,7 +7,7 @@
 
 <!-- page title header -->
 <?php
-$routes = array("Home", "Book appointment", "About us");
+$routes = array("Home", "About us");
 include_once(__DIR__ . "./components/page-title-header.php"); ?>
 
 <div class="my-4"></div>
