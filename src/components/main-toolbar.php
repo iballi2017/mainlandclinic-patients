@@ -65,7 +65,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="services_telemedicine.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="services_home-care-live-in-nursing.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Home Care (Live in) Nursing
                                     </a>
                                 </li>
@@ -97,7 +97,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <a href="services_support-and-giving.php" class="whitespace-nowrap block px-4 py-2 text-center hover:bg-primary-50 hover:rounded-l-full hover:rounded-r-full dark:hover:bg-gray-600 dark:hover:text-white">
                                         Support & giving
                                     </a>
                                 </li>
