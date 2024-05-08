@@ -66,7 +66,7 @@
                 <div class="my-2"></div>
                 <ul class="flex flex-col gap-2">
                     <li>
-                        <a href="#" class="flex flex-col gap-2 items-center rounded-lg shadow md:flex-row">
+                        <a href="#" class="flex gap-2 items-start rounded-lg">
                             <img class="object-cover rounded md:rounded-lg w-16" src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                             <div class="flex flex-col justify-between">
                                 <h5 class="text-sm font-bold">Noteworthy technology acquisitions 2021</h5>
@@ -75,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex flex-col gap-2 items-center rounded-lg shadow md:flex-row">
+                        <a href="#" class="flex gap-2 items-start rounded-lg">
                             <img class="object-cover rounded md:rounded-lg w-16" src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
                             <div class="flex flex-col justify-between">
                                 <h5 class="text-sm font-bold">Noteworthy technology acquisitions 2021</h5>
