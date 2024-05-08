@@ -134,7 +134,48 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
+
+
     }
+
+
+
+    const blogpost_card = document.querySelectorAll(".blogpost-card");
+    for (let i = 0; i < blogpost_card.length; i++) {
+        const card = blogpost_card[i];
+        console.log("card: ", card)
+        const body = card.querySelector(".body")
+        console.log("body: ", body.innerHTML);
+        // const slice = body.innerHTML.slice(0, 50)
+        body.innerHTML = body.innerHTML.slice(0, 200) + "..."
+
+    }
+
+
+    // Function to be called when the viewport width crosses a media query threshold
+    function handleBlogpostBodtTexts(mql) {
+        if (mql.matches) {
+            // Media query matches (viewport width is greater than or equal to 600px)
+            console.log("Viewport width is 600px or more");
+            // Your code here for actions to take when the media query matches
+        } else {
+            // Media query does not match (viewport width is less than 600px)
+            console.log("Viewport width is less than 600px");
+            // Your code here for actions to take when the media query does not match
+        }
+    }
+
+    // Create a media query list for a viewport width of 600px or more
+    const mediaQueryList = window.matchMedia("(min-width: 600px)");
+
+    // Call the function initially to check the viewport width
+    handleBlogpostBodtTexts(mediaQueryList);
+
+    // Add a listener to handle changes in viewport width
+    mediaQueryList.addListener(handleBlogpostBodtTexts);
+
+
+
 
     init();
 

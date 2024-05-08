@@ -48,7 +48,7 @@
 
                             <!-- CONTENT -->
 
-                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+                            <div class="min-h-96 flex flex-col justify-between bg-white border border-gray-200 rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700">
 
                                 <div class="p-2 sm:p-4 h-80 min-h-80 text-sm overflow-auto primary-scrollbar">
                                     <!-- Typing... -->
@@ -204,6 +204,7 @@
                                 </div>
 
 
+
                                 <div class="px-2 py-4 sm:x-4 sm:py-8 bg-white border-t border-gray-200 rounded-b-lg dark:bg-gray-800 dark:border-gray-700">
                                     <div class="flex items-center gap-2">
                                         <button title="Refresh messages" aria-label="refresh messages" class="bg-gray-50 border border-gray-300 text-gray-900 rounded sm:rounded-lg focus:ring-secondary-500 focus:border-secondary-500 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-secondary-500">
@@ -230,6 +231,8 @@
                                         Export chat
                                     </button>
                                 </div>
+                                <div><!-- spacer --></div>
+                                <p class="text-center my-4 sm:my-8 text-[#9D9D9D]">Can't chat now, doctor not available</p>
                             </div>
 
                         </section>

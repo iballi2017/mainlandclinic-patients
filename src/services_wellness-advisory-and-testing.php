@@ -16,7 +16,9 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
     <div class="mx-auto max-w-7xl px-2 sm:px-6 md:px-8 md:leading-7">
         <p>
             Welcome to Mainland Clinics, where your health and well-being are our top priorities. As part of our commitment to serving the community in Lagos, Nigeria, we are pleased to offer Free Clinic Testing on Fridays.
-            <br />
+        </p>
+        <div class="my-4"></div>
+        <p>
             Also looking for convenient and reliable healthcare services in the central areas of Lagos? Mainland Clinics has you covered with our Paid Home Service
         </p>
         <div class="my-4"></div>
@@ -65,8 +67,8 @@ include_once(__DIR__ . "./components/page-title-header.php"); ?>
                     </li>
                 </ul>
 
-                <div class="my-4 sm:my-16"></div>
-                <a href="book-appointment-free-online.php" class="step-control prev-btn text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                <div class="my-4"></div>
+                <a href="book-appointment-free-online.php" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm inline-block px-5 sm:px-8 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                     Book appointment
                 </a>
             </div>

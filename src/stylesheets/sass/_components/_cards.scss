@@ -116,3 +116,12 @@
     }
   }
 }
+
+.blogpost-card{
+  // background-color: red;
+  .body{
+    line-height: 25px;
+    height: calc(25px * 3);
+    overflow: hidden;
+  }
+}
