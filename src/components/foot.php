@@ -7,7 +7,7 @@
 
     <div class="mx-auto max-w-7xl px-2 text-sm sm:px-6 lg:px-8 py-16 sm:leading-7">
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-6 sm:col-span-3">
+            <div class="col-span-12 sm:col-span-3">
                 <section class="foot-section">
                     <h6 class="navbar-brand mb-4">
                         <span class="sr-only">Mainland Clinics</span>
@@ -34,7 +34,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-span-12 sm:col-span-3">
+            <div class="col-span-6 sm:col-span-3">
                 <h6 class="text-lg font-semibold sm:mb-4">Contacts</h6>
                 <ul class="list-style-none ps-0">
                     <li class="mb-4">Email: info@avonhealthcare.com</li>
