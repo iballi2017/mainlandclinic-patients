@@ -1,5 +1,3 @@
-// alert("hello");
-
 import FormControls from "./form-controls.js";
 import MiscellaneousEvents from "./miscellaneous-events.js";
 import Product from "./product.js";

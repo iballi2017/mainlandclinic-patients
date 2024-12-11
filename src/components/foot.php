@@ -27,7 +27,7 @@
                         </li>
                         <li><a href="#" class="text-decoration-none line-height-400">FAQs</a>
                         </li>
-                        <li><a href="#" class="text-decoration-none line-height-400">Terms &
+                        <li><a href="terms-and-conditions.php" class="text-decoration-none line-height-400">Terms &
                                 conditions</a></li>
                         <li><a href="#" class="text-decoration-none line-height-400">Privacy
                                 policy</a></li>
